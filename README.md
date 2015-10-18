@@ -11,5 +11,5 @@ JavaScript 常用方法的一个集合库
 ---
 更新日志：
 
-1. v0.01 - 20151007  
-增加 ```addLoadEvent``` 与 ```insertAfter``` 方法。
+1. v0.01 - 20151007：增加 ```addLoadEvent``` 与 ```insertAfter``` 方法。
+2. v0.02 - 20151018：优化方法，避免全局污染。
