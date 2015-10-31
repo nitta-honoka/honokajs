@@ -34,7 +34,7 @@ myUtils = function() {
     }
   }
   return {
-    insertAfter: insertAfter;
-    addLoadEvent: addLoadEvent;
+    insertAfter: insertAfter,
+    addLoadEvent: addLoadEvent
   }
 }();
