@@ -33,8 +33,23 @@ myUtils = function() {
       }
     }
   }
+  /**
+   * 得到 Ajax 对象
+   * 
+   * @return {Object} Ajax 对象
+   */
+  function getAjaxObject() {
+    var xmlhttp;
+    if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        return xmlhttp = new XMLHttpRequest();
+    }
+    else {// code for IE6, IE5
+        return xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+}
   return {
     insertAfter: insertAfter,
-    addLoadEvent: addLoadEvent
+    addLoadEvent: addLoadEvent,
+    getAjaxObject: getAjaxObject
   }
 }();
