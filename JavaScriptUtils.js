@@ -66,10 +66,29 @@ myUtils = function () {
         return null;
     }
 
+    /**
+     * 为元素增加新 class
+     * @param element 元素节点
+     * @param value class 名
+     */
+    function addClass(element, value) {
+        if (!element.className) {
+            //当元素没有 class 时，直接赋值
+            element.className = value;
+        } else {
+            //如果元素已有 class，追加一个新的 class 在后面
+            newClassName = element.className;
+            newClassName += " ";
+            newClassName += value;
+            element.className = newClassName;
+        }
+    }
+
     return {
         insertAfter: insertAfter,
         addLoadEvent: addLoadEvent,
         getAjaxObject: getAjaxObject,
-        getNextElement: getNextElement
+        getNextElement: getNextElement,
+        addClass: addClass
     }
 }();
