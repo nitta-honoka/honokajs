@@ -1,4 +1,4 @@
-# Honoka_JavaScriptUtils
+# HonokaJS_JavaScriptUtils
 
 JavaScript 常用方法的一个集合库
 
@@ -10,6 +10,12 @@ JavaScript 常用方法的一个集合库
 3. getAjaxObject：得到 Ajax 对象。
 4. getNextElement：得到指定元素节点的下一个元素节点。
 5. addClass：为元素节点增加新的 class。
+
+---
+使用方法：
+
+ - 例：如果需要调用 `addLoadEvent()` 方法，则查看 JS 中为该方法设置的别名，可使用 `myUtils.addLoadEvent()`。
+ - 也可在 `return {}` 块中自行修改方法别名。
 
 ---
 更新日志：
