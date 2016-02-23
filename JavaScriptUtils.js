@@ -1,4 +1,4 @@
-myUtils = function () {
+var myUtils = function() {
     /**
      * 将新元素节点添加到目标元素节点的后面
      * @param newElement 新元素节点
@@ -28,7 +28,7 @@ myUtils = function () {
             window.onload = func;
         } else {
             //如果处理函数已经绑定了一些函数，就把新函数添加到末尾
-            window.onload = function () {
+            window.onload = function() {
                 oldOnload();
                 func();
             }
@@ -41,10 +41,9 @@ myUtils = function () {
      * @return {Object} Ajax 对象
      */
     function getAjaxObject() {
-        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+        if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
             return new XMLHttpRequest();
-        }
-        else {// code for IE6, IE5
+        } else { // code for IE6, IE5
             return new ActiveXObject("Microsoft.XMLHTTP");
         }
     }
@@ -83,12 +82,39 @@ myUtils = function () {
             element.className = newClassName;
         }
     }
+    /**
+     * 动态加载 JavaScript 文件，生成 DOM - <script type="text/javascript" src=url></script>
+     * 调用方法：myUtils.loadScript("script.js", function() {...})
+     *  注意：不保证文件加载顺序，需要顺序请嵌套加载
+     * @param  {[string]}   url     JavaScript 文件路径
+     * @param  {Function} callback  加载完成的回调方法
+     * @return {[type]}            [description]
+     */
+    function loadScript(url, callback) {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        if (script.readyState) { //for IE
+            script.onreadystatechange = function() {
+                if (script.readyState == "loaded" || script.readyState == "complete") {
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else { //for other browsers
+            script.onload = function() {
+                callback();
+            };
+        }
+        script.src = url;
+        document.getElementsByTagName("head")[0].appendChild(script);
+    }
 
     return {
         insertAfter: insertAfter,
         addLoadEvent: addLoadEvent,
         getAjaxObject: getAjaxObject,
         getNextElement: getNextElement,
-        addClass: addClass
-    }
+        addClass: addClass,
+        loadScript: loadScript
+    };
 }();
