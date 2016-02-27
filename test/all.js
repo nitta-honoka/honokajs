@@ -1,3 +1,3 @@
 test("the base function exists", function() {
-  ok(honoka);
+  honoka.addClass()
 });

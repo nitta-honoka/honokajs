@@ -20,9 +20,9 @@ Or grab the [source](https://github.com/nitta-honoka/honokajs/dist/honokajs.js) 
 
 Basic usage is as follows:
 
-    honokajs();
+    honoka.function();
 
-For advanced usage, see the documentation.
+Also support the AMD & CMD. For advanced usage, see the documentation.
 
 ## Documentation
 
