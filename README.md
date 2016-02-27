@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/github/nitta-honoka/honokajs/badges/gpa.svg)](https://codeclimate.com/github/nitta-honoka/honokajs)
 # honokajs
 
 A light library of common JavaScript functions 
