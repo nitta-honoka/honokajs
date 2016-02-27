@@ -1,9 +1,9 @@
 (function (root, factory) {
-    if (typeof define === 'function' && define.amd) {  //for amd
+    if (typeof define === 'function' && define.amd) {  //for AMD && CMD
         define(factory);
-    } else if (typeof exports === 'object') {  //for cmd
+    } else if (typeof exports === 'object') {  //for CommonJS
         module.exports = factory;
-    } else {         //for no amd && cmd
+    } else {         //for root
         root.honoka = factory();
     }
 })(this, function () {
@@ -36,7 +36,7 @@
      * {function} fail 请求失败后的回调函数
      */
     honoka.get = function (url, options) {
-        honoka.send(url, "GET", options);
+        send(url, "GET", options);
     };
     /**
      * 以 get 方式读取数据
@@ -48,7 +48,7 @@
      * {function} fail 请求失败后的回调函数
      */
     honoka.load = function (url, options) {
-        honoka.send(url, "GET", options);
+        send(url, "GET", options);
     };
     /**
      * 以 post 方式发送请求
@@ -61,7 +61,7 @@
      * {function} fail 请求失败后的回调函数
      */
     honoka.post = function (url, options) {
-        honoka.send(url, "POST", options);
+        send(url, "POST", options);
     };
     /**
      * 发送 ajax 请求
@@ -69,7 +69,7 @@
      * @param {string} method 请求方式
      * @param {object} options 选项
      */
-    honoka.send = function (url, method, options) {
+     function send (url, method, options) {
         var data = options.data || {}; //请求参数
         var async = options.async || true; //同步或者异步，默认异步
         var succCallback = options.succ; //成功时的回调方法

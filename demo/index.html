@@ -25,9 +25,10 @@
 
     <script>
       /* begin demo script */
-
-      var n = honoka();
-      console.log(n);
+      //页面加载完成后动态加载一个js文件到head标签中
+      window.onload = honoka.loadScript("../dist/honokajs.min.js", function() {
+        console.log("load success");
+      });
 
       /* end demo script */
     </script>
