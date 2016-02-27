@@ -1,13 +1,16 @@
 {
   "name": "honokajs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/honokajs.min.js",
   "description": "A light library of common JavaScript functions ",
   "repository": {
     "type": "git",
     "url": "git://github.com/nitta-honoka/honokajs.git"
   },
-  "keywords": [],
+  "keywords": [
+    "ajax",
+    "JavaScript Library"
+  ],
   "author": "Aolin Xu",
   "license": "MIT",
   "readmeFilename": "README.md",
