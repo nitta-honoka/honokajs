@@ -11,7 +11,7 @@
 honoka.insertAfter = function (newElement, targetElement) {
     //将目标元素的 parentNode 值（即父节点）保存到变量中
     var parent = targetElement.parentNode;
-    if (parent.lastChild == targetElement) {
+    if (parent.lastChild === targetElement) {
         //判断目标元素是不是 parent 的最后一个子元素，若是，就用 appendChild 方法把新元素加到 parent 上，刚好被插入到目标元素后面
         parent.appendChild(newElement);
     } else {
@@ -63,7 +63,7 @@ honoka.loadScript = function (url, callback) {
     script.type = "text/javascript";
     if (script.readyState) { //for IE
         script.onreadystatechange = function () {
-            if (script.readyState == "loaded" || script.readyState == "complete") {
+            if (script.readyState === "loaded" || script.readyState === "complete") {
                 script.onreadystatechange = null;
                 callback();
             }
