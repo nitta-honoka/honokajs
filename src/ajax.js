@@ -51,6 +51,13 @@ honoka.send = function (url, method, options) {
     var succCallback = options.succ; //成功时的回调方法
     var failCallback = options.fail; //失败时的回调方法
     var request = honoka.getAjaxObj();
+    request.open(method, url, async);
+    if (data instanceof Object) {
+        data = JSON.stringify(data);
+        request.setRequestHeader('Content-Type', 'application/json');
+    }
+    request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    request.send(data);
     if (succCallback instanceof Function) {
         request.onreadystatechange = function () {
             if (request.readyState === 4 && (request.status === 200)) {
@@ -61,13 +68,6 @@ honoka.send = function (url, method, options) {
             }
         };
     }
-    request.open(method, url, async);
-    if (data instanceof Object) {
-        data = JSON.stringify(data);
-        request.setRequestHeader('Content-Type', 'application/json');
-    }
-    request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-    request.send(data);
 };
 /**
  * 获得 XHR 对象

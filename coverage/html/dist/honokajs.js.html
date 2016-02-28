@@ -1,0 +1,1079 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for dist/honokajs.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">dist/</a> honokajs.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">42.61% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>49/115</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">19.67% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>12/61</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">44% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>11/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">42.61% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>49/115</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">(function (root, factory) {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof define === 'function' &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >define.amd)</span> {  //for AMD &amp;&amp; CMD
+<span class="cstat-no" title="statement not covered" >        define(factory);</span>
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof exports === 'object') {  //for CommonJS
+<span class="cstat-no" title="statement not covered" >        module.exports = factory;</span>
+    } else {         //for root
+        root.honoka = factory();
+    }
+})(this, function () {
+&nbsp;
+&nbsp;
+    "use strict";
+&nbsp;
+&nbsp;
+/* honokajs main */
+&nbsp;
+// Base function.
+var honoka = {};
+&nbsp;
+&nbsp;
+// Version.
+honoka.VERSION = '0.1.1';
+&nbsp;
+&nbsp;
+&nbsp;
+/**
+ * Created by honoka on 16/2/27.
+ * ajax辅助库
+ */
+/**
+ * 以 get 方式发送请求
+ * @param {string} url  请求链接
+ * @param {Object} options 配置项
+ * 配置项内容：
+ * {boolean} async true异步方式，false 同步方式
+ * {function} succ 请求成功后的回调函数
+ * {function} fail 请求失败后的回调函数
+ */
+honoka.get = <span class="fstat-no" title="function not covered" >function (url, options) {</span>
+<span class="cstat-no" title="statement not covered" >    honoka.send(url, "GET", options);</span>
+};
+/**
+ * 以 get 方式读取数据
+ * @param {string} url  请求链接
+ * @param {Object} options 配置项
+ * 配置项内容：
+ * {boolean} async true异步方式，false 同步方式
+ * {function} succ 请求成功后的回调函数
+ * {function} fail 请求失败后的回调函数
+ */
+honoka.load = <span class="fstat-no" title="function not covered" >function (url, options) {</span>
+<span class="cstat-no" title="statement not covered" >    honoka.send(url, "GET", options);</span>
+};
+/**
+ * 以 post 方式发送请求
+ * @param {string} url  请求链接
+ * @param {Object} options 配置项
+ * 配置项内容：
+ * {Object} data 请求参数
+ * {boolean} async true异步方式，false 同步方式
+ * {function} succ 请求成功后的回调函数
+ * {function} fail 请求失败后的回调函数
+ */
+honoka.post = <span class="fstat-no" title="function not covered" >function (url, options) {</span>
+<span class="cstat-no" title="statement not covered" >    honoka.send(url, "POST", options);</span>
+};
+/**
+ * 发送 ajax 请求
+ * @param {string} url 请求链接
+ * @param {string} method 请求方式
+ * @param {object} options 选项
+ */
+honoka.send = <span class="fstat-no" title="function not covered" >function (url, method, options) {</span>
+<span class="cstat-no" title="statement not covered" >    var data = options.data || {}; </span>//请求参数
+<span class="cstat-no" title="statement not covered" >    var async = options.async || true; </span>//同步或者异步，默认异步
+<span class="cstat-no" title="statement not covered" >    var succCallback = options.succ; </span>//成功时的回调方法
+<span class="cstat-no" title="statement not covered" >    var failCallback = options.fail; </span>//失败时的回调方法
+<span class="cstat-no" title="statement not covered" >    var request = honoka.getAjaxObj();</span>
+<span class="cstat-no" title="statement not covered" >    request.open(method, url, async);</span>
+<span class="cstat-no" title="statement not covered" >    if (data instanceof Object) {</span>
+<span class="cstat-no" title="statement not covered" >        data = JSON.stringify(data);</span>
+<span class="cstat-no" title="statement not covered" >        request.setRequestHeader('Content-Type', 'application/json');</span>
+    }
+<span class="cstat-no" title="statement not covered" >    request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');</span>
+<span class="cstat-no" title="statement not covered" >    request.send(data);</span>
+<span class="cstat-no" title="statement not covered" >    if (succCallback instanceof Function) {</span>
+<span class="cstat-no" title="statement not covered" >        request.onreadystatechange = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            if (request.readyState === 4 &amp;&amp; (request.status === 200)) {</span>
+<span class="cstat-no" title="statement not covered" >                succCallback(request.responseText);</span>
+            }
+            else <span class="cstat-no" title="statement not covered" >if (request.status === 400 || request.status === 404 || request.status === 500) {</span>
+<span class="cstat-no" title="statement not covered" >                failCallback()</span>
+            }
+        };
+    }
+};
+/**
+ * 获得 XHR 对象
+ * @returns {XMLHttpRequest} XHR 对象
+ */
+honoka.getAjaxObj = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >    if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari</span>
+<span class="cstat-no" title="statement not covered" >        return new XMLHttpRequest();</span>
+    } else { // code for IE6, IE5
+<span class="cstat-no" title="statement not covered" >        return new ActiveXObject("Microsoft.XMLHTTP");</span>
+    }
+};
+&nbsp;
+/**
+ * Created by honoka on 16/2/27.
+ * Dom操作辅助类
+ */
+&nbsp;
+/**
+ * 将新元素插入目标元素前面
+ * @param {Dom Object} newElement
+ * @param {Dom Object} targetElement
+ */
+honoka.insertAfter = <span class="fstat-no" title="function not covered" >function (newElement, targetElement) {</span>
+    //将目标元素的 parentNode 值（即父节点）保存到变量中
+<span class="cstat-no" title="statement not covered" >    var parent = targetElement.parentNode;</span>
+<span class="cstat-no" title="statement not covered" >    if (parent.lastChild === targetElement) {</span>
+        //判断目标元素是不是 parent 的最后一个子元素，若是，就用 appendChild 方法把新元素加到 parent 上，刚好被插入到目标元素后面
+<span class="cstat-no" title="statement not covered" >        parent.appendChild(newElement);</span>
+    } else {
+        //如果不是，就把新元素插入到目标元素和目标元素的下一个兄弟元素之间
+<span class="cstat-no" title="statement not covered" >        parent.insertBefore(newElement, targetElement.nextSibling);</span>
+    }
+};
+/**
+ * 得到指定元素节点的下一个节点
+ * @param node 指定节点
+ * @returns
+ */
+honoka.getNextElement = <span class="fstat-no" title="function not covered" >function (node) {</span>
+<span class="cstat-no" title="statement not covered" >    if (node.nodeName == 1) {</span>
+        //当 nodeName 等于 1 时为元素节点
+<span class="cstat-no" title="statement not covered" >        return node;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    if (node.nextSibling) {</span>
+        //当元素节点下个节点存在时，递归寻找下一个元素节点
+<span class="cstat-no" title="statement not covered" >        return getNextElement(node.nextSibling);</span>
+    }
+<span class="cstat-no" title="statement not covered" >    return null;</span>
+};
+/**
+ * 为指定元素增加 class 值
+ * @param {Dom Object} element 指定元素对象
+ * @param {string} value class值
+ */
+honoka.addClass = <span class="fstat-no" title="function not covered" >function (element, value) {</span>
+<span class="cstat-no" title="statement not covered" >    if (!element.className) {</span>
+        //当元素没有 class 时，直接赋值
+<span class="cstat-no" title="statement not covered" >        element.className = value;</span>
+    } else {
+        //如果元素已有 class，追加一个新的 class 在后面
+<span class="cstat-no" title="statement not covered" >        element = element.className;</span>
+<span class="cstat-no" title="statement not covered" >        element += " ";</span>
+<span class="cstat-no" title="statement not covered" >        element += value;</span>
+<span class="cstat-no" title="statement not covered" >        element.className = newClassName;</span>
+    }
+};
+/**
+ * 动态加载 JavaScript 文件，生成 DOM - &lt;script type="text/javascript" src=url&gt;&lt;/script&gt;
+ *  注意：不保证文件加载顺序，需要顺序请嵌套加载
+ * @param  {[string]}   url     JavaScript 文件路径
+ * @param  {Function} callback  加载完成的回调方法
+ */
+honoka.loadScript = <span class="fstat-no" title="function not covered" >function (url, callback) {</span>
+<span class="cstat-no" title="statement not covered" >    var script = document.createElement("script");</span>
+<span class="cstat-no" title="statement not covered" >    script.type = "text/javascript";</span>
+<span class="cstat-no" title="statement not covered" >    if (script.readyState) { //for IE</span>
+<span class="cstat-no" title="statement not covered" >        script.onreadystatechange = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            if (script.readyState === "loaded" || script.readyState === "complete") {</span>
+<span class="cstat-no" title="statement not covered" >                script.onreadystatechange = null;</span>
+<span class="cstat-no" title="statement not covered" >                callback();</span>
+            }
+        };
+    } else { //for other browsers
+<span class="cstat-no" title="statement not covered" >        script.onload = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            callback();</span>
+        };
+    }
+<span class="cstat-no" title="statement not covered" >    script.src = url;</span>
+<span class="cstat-no" title="statement not covered" >    document.getElementsByTagName("head")[0].appendChild(script);</span>
+};
+&nbsp;
+&nbsp;
+/**
+ * Created by honoka on 16/2/28.
+ * 数据操作辅助类
+ */
+ /**
+  * 是否是数组类型
+  * @param {Array} arr 判断数组
+  * @retrun Boolean true 是数组类型
+  */
+ honoka.isArray = function (arr) {
+     //当页面存在多个全局作用域时，使用 instanceof 判断不同作用域的引用类型会造成混乱
+     //故调用 Object 原生方法 toString 判断
+     return Object.prototype.toString.call(arr) == "[object Array]";
+ };
+ /**
+  * 是否是函数类型
+  * @param {Function} fn 被判断函数
+  * @retrun Boolean true 是函数类型
+  */
+ honoka.isFunction = function (fn) {
+     return Object.prototype.toString.call(fn) == "[object Function]";
+ };
+ /**
+  * 是否是日期类型
+  * @method isDate
+  * @param  {Date}  date 被判断日期
+  * @return {Boolean}  true 是日期类型
+  * @author honoka
+  */
+ honoka.isDate = function (date) {
+     return Object.prototype.toString.call(date) == "[object Date]";
+ }
+ /**
+  * 是否是正则表达式类型
+  * @method isRegExp
+  * @param  {RegExp}  reg 被判断正则表达式
+  * @return {Boolean}  true 是正则表达式类型
+  * @author honoka
+  */
+ honoka.isRegExp = function (reg) {
+     return Object.prototype.toString.call(reg) == "[object RegExp]";
+ }
+ /**
+  * 是否是字符串类型
+  * @method isString
+  * @param  {string}  str 被判断字符串
+  * @return {Boolean}  true 是字符串类型
+  * @author honoka
+  */
+ honoka.isString = function (str) {
+     return Object.prototype.toString.call(str) == "[object String]";
+ }
+ /**
+  * 是否是数值类型
+  * @method isNumber
+  * @param  {number}  num 被判断数值
+  * @return {Boolean}  true 是数值类型
+  * @author honoka
+  */
+ honoka.isNumber = function (num) {
+     return Object.prototype.toString.call(num) == "[object Number]";
+ }
+ /**
+  * 是否是布尔类型
+  * @method isBoolean
+  * @param  {boolean}  bol 被判断布尔
+  * @return {Boolean}  true 是布尔类型
+  * @author honoka
+  */
+ honoka.isBoolean = function (bol) {
+     return Object.prototype.toString.call(bol) == "[object Boolean]";
+ }
+ /**
+  * 是否是对象
+  * @method isObject
+  * @param  {Object}  obj 被判断对象
+  * @return {Boolean}  true 是对象
+  * @author honoka
+  */
+ honoka.isObject = function (obj) {
+     return Object.prototype.toString.call(obj) == "[object Object]";
+ }
+/**
+ * 深度复制对象，即产生一个新的对象而不是只复制引用，不复制函数
+ * @method cloneObject
+ * @param  {Object}    src 任何被复制的对象
+ * @return {Object} result 产生的新对象
+ * @author honoka
+ */
+honoka.cloneObject = function (src) {
+    //如果是基本类型值
+    if (src == null || (typeof src != "object")) {
+        var result = src;
+        return result;
+    } else if (honoka.isArray(src)) { //如果是数组类型
+        var  result = [];
+        for (var i = 0; i &lt; src.length; i++) {
+            result[i] = honoka.cloneObject(src[i]);
+        }
+        return result;
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (honoka.isDate(src)) {
+<span class="cstat-no" title="statement not covered" >        var result = new Date();</span>
+<span class="cstat-no" title="statement not covered" >        result.setTime(src.getTime());</span>
+<span class="cstat-no" title="statement not covered" >        return result;</span>
+    } else <span class="missing-if-branch" title="else path not taken" >E</span>if (honoka.isObject(src)) {
+        var result = {};
+        for (var attr in src) {
+            <span class="missing-if-branch" title="else path not taken" >E</span>if (src.hasOwnProperty(attr)) {
+                result[attr] = honoka.cloneObject(src[attr]);
+            }
+        }
+        return result;
+    } else <span class="cstat-no" title="statement not covered" >if (honoka.isRegExp(src)) {</span>
+<span class="cstat-no" title="statement not covered" >        var flags = "";</span>
+<span class="cstat-no" title="statement not covered" >        flags += src.global ? "g" : "";</span>
+<span class="cstat-no" title="statement not covered" >        flags += src.multiline? "m" : "";</span>
+<span class="cstat-no" title="statement not covered" >        flags += src.ignoreCase ? "i" : "";</span>
+<span class="cstat-no" title="statement not covered" >        return new RegExp(src.source, flags);</span>
+    }
+}
+&nbsp;
+&nbsp;
+/**
+ * Created by honoka on 16/2/27.
+ * 事件辅助类
+ */
+&nbsp;
+/**
+ * 将函数绑定到 onload 事件上
+ * @param {function} func 需绑定的函数
+ */
+honoka.addLoadEvent = <span class="fstat-no" title="function not covered" >function (func) {</span>
+    //把现有的 window.onload 事件处理函数的值存入变量
+<span class="cstat-no" title="statement not covered" >    var oldOnload = window.onload;</span>
+<span class="cstat-no" title="statement not covered" >    if (typeof window.onload != "function") {</span>
+        //如果这个处理函数还没有绑定任何函数，就像平时那样添加新函数
+<span class="cstat-no" title="statement not covered" >        window.onload = func;</span>
+    } else {
+        //如果处理函数已经绑定了一些函数，就把新函数添加到末尾
+<span class="cstat-no" title="statement not covered" >        window.onload = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            oldOnload();</span>
+<span class="cstat-no" title="statement not covered" >            func();</span>
+        }
+    }
+};
+&nbsp;
+&nbsp;
+    return honoka;
+&nbsp;
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Feb 28 2016 23:25:58 GMT+0800 (CST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

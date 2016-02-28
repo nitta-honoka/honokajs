@@ -17,6 +17,8 @@
     "bower_components",
     "test"
   ],
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine-core": "jasmine#^2.4.1"
   }
 }

@@ -14,14 +14,42 @@ module.exports = function (grunt) {
                     'src/main.js',
                     'src/ajax.js',
                     'src/dom.js',
+                    'src/handle.js',
                     'src/event.js',
-                    'src/verify.js',
                     'src/_outro.js'
                 ],
                 dest: 'dist/<%= pkg.name.replace(".js", "") %>.js'
             }
         },
-
+        jasmine: {
+			coverage: {
+				src: 'dist/honokajs.js',
+				options: {
+					specs: 'test/*.js',
+					template: require('grunt-template-jasmine-istanbul'),
+					templateOptions: {
+						coverage: 'coverage/coverage.json',
+						report: [
+							{
+								type: 'html',
+								options: {
+									dir: 'coverage/html'
+								}
+							},
+							{
+								type: 'cobertura',
+								options: {
+									dir: 'coverage/cobertura'
+								}
+							},
+							{
+								type: 'text-summary'
+							}
+						]
+					}
+				}
+			}
+		},
         uglify: {
             options: {
                 banner: '/*! <%= pkg.name.replace(".js", "") %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
@@ -38,7 +66,7 @@ module.exports = function (grunt) {
         },
 
         jshint: {
-            files: ['dist/honoka.js'],
+            files: ['dist/honokajs.js'],
             options: {
                 globals: {
                     console: true,
@@ -57,12 +85,13 @@ module.exports = function (grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
+    // grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
-
-    grunt.registerTask('test', ['jshint', 'qunit']);
-    grunt.registerTask('default', ['concat', 'jshint', 'qunit', 'uglify']);
+    grunt.loadNpmTasks('grunt-contrib-jasmine');
+    // grunt.registerTask('test', ['jshint', 'qunit']);
+    grunt.registerTask('test', ['jasmine:coverage']);
+    grunt.registerTask('default', ['concat', 'jasmine:coverage', 'uglify']);
 
 };
