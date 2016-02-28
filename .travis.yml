@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+    - "0.10"
+
+notifications:
+    email: false
+
+before_install: npm install -g grunt-cli
+install: npm install
+after_success: CODECLIMATE_REPO_TOKEN=3e88cf2c5f1b031b5ba575a7d8f1ee06fe20ee33bf7af15fd25893519c71ea78 codeclimate < coverage/lcov.info

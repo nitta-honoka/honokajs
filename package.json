@@ -1,6 +1,6 @@
 {
   "name": "honokajs",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "dist/honokajs.min.js",
   "description": "A light library of common JavaScript functions ",
   "repository": {
