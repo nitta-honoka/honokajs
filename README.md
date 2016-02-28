@@ -16,6 +16,10 @@ Using Bower:
 
     bower install honokajs
 
+Or Using Npm:
+
+    npm install honokajs
+
 Or grab the [source](https://github.com/nitta-honoka/honokajs/dist/honokajs.js) ([minified](https://github.com/nitta-honoka/honokajs/dist/honokajs.min.js)).
 
 ## Usage
