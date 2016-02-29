@@ -1,4 +1,5 @@
 [![Code Climate](https://codeclimate.com/github/nitta-honoka/honokajs/badges/gpa.svg)](https://codeclimate.com/github/nitta-honoka/honokajs)
+![Travis](https://travis-ci.org/nitta-honoka/honokajs.svg?branch=master)
 # honokajs
 
 A light library of common JavaScript functions 
@@ -14,6 +15,10 @@ See the [project homepage](http://nitta-honoka.github.io/honokajs).
 Using Bower:
 
     bower install honokajs
+
+Or Using Npm:
+
+    npm install honokajs
 
 Or grab the [source](https://github.com/nitta-honoka/honokajs/dist/honokajs.js) ([minified](https://github.com/nitta-honoka/honokajs/dist/honokajs.min.js)).
 
