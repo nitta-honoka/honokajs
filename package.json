@@ -16,6 +16,7 @@
   "readmeFilename": "README.md",
   "dependencies": {},
   "devDependencies": {
+    "cz-conventional-changelog": "^1.1.5",
     "grunt": "~0.4.1",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-jasmine": "^1.0.0",
@@ -25,5 +26,10 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-template-jasmine-istanbul": "^0.4.0",
     "jasmine": "^2.4.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
