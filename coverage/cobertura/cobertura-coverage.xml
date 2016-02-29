@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="115"  lines-covered="49"  line-rate="0.4261"  branches-valid="61"  branches-covered="12"  branch-rate="0.1967"  timestamp="1456673158343" complexity="0" version="0.1">
+<coverage lines-valid="115"  lines-covered="49"  line-rate="0.4261"  branches-valid="61"  branches-covered="12"  branch-rate="0.1967"  timestamp="1456756329183" complexity="0" version="0.1">
 <sources>
 	<source>/Users/niconicoAO/Documents/GitHub/honokajs</source>
 </sources>

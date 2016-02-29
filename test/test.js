@@ -1,6 +1,6 @@
 /**
  * 使用 karam 配合 jasmine 测试
- * @author honoka
+ * @authonokar honoka
  */
 "use strict";
 

@@ -29,7 +29,7 @@
   */
  honoka.isDate = function (date) {
      return Object.prototype.toString.call(date) == "[object Date]";
- }
+ };
  /**
   * 是否是正则表达式类型
   * @method isRegExp
@@ -39,7 +39,7 @@
   */
  honoka.isRegExp = function (reg) {
      return Object.prototype.toString.call(reg) == "[object RegExp]";
- }
+ };
  /**
   * 是否是字符串类型
   * @method isString
@@ -49,7 +49,7 @@
   */
  honoka.isString = function (str) {
      return Object.prototype.toString.call(str) == "[object String]";
- }
+ };
  /**
   * 是否是数值类型
   * @method isNumber
@@ -59,7 +59,7 @@
   */
  honoka.isNumber = function (num) {
      return Object.prototype.toString.call(num) == "[object Number]";
- }
+ };
  /**
   * 是否是布尔类型
   * @method isBoolean
@@ -69,7 +69,7 @@
   */
  honoka.isBoolean = function (bol) {
      return Object.prototype.toString.call(bol) == "[object Boolean]";
- }
+ };
  /**
   * 是否是对象
   * @method isObject
@@ -79,7 +79,7 @@
   */
  honoka.isObject = function (obj) {
      return Object.prototype.toString.call(obj) == "[object Object]";
- }
+ };
 /**
  * 深度复制对象，即产生一个新的对象而不是只复制引用，不复制函数
  * @method cloneObject
@@ -117,4 +117,4 @@ honoka.cloneObject = function (src) {
         flags += src.ignoreCase ? "i" : "";
         return new RegExp(src.source, flags);
     }
-}
+};
