@@ -61,5 +61,23 @@ describe("测试数据操作类", function () {
         expect(abObj.b.b1[0]).toBe("Hello");
         expect(copyObj.a).toBe(1);
         expect(copyObj.b.b1[0]).toBe("hello");
+        var strObj = new String("a");
+        var strObjCopy = honoka.cloneObject(strObj);
+        strObj = new String("b");
+        expect(strObj.valueOf()).toBe("b");
+        expect(strObjCopy.valueOf()).toBe("a");
+        var boolObj = new Boolean(true);
+        var boolObjCopy = honoka.cloneObject(boolObj);
+        boolObj = new Boolean(false);
+        expect(boolObj.valueOf()).toBe(false);
+        expect(boolObjCopy.valueOf()).toBe(true);
+    });
+    it("测试数组去重", function () {
+        var numArr = [3,3,5,6,2,3];
+        var strArr = ['a','b','c','a','b','d'];
+        var mixArr = [3,5,3,1,'3','1','6','1'];
+        expect(honoka.uniqArray(numArr)).toEqual([3,5,6,2]);
+        expect(honoka.uniqArray(strArr)).toEqual(['a','b','c','d']);
+        expect(honoka.uniqArray(mixArr)).toEqual([3,5,1,'3','1','6']);
     });
 });
