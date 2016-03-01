@@ -5,5 +5,4 @@ var honoka = {};
 
 
 // Version.
-honoka.VERSION = '0.1.1';
-
+honoka.VERSION = '0.1.4';

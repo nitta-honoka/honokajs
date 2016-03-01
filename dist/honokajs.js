@@ -19,8 +19,7 @@ var honoka = {};
 
 
 // Version.
-honoka.VERSION = '0.1.1';
-
+honoka.VERSION = '0.1.4';
 
 
 /**
@@ -327,7 +326,7 @@ honoka.uniqArray = function (arr) {
     var key;
     if (honoka.isArray(arr)) {
         for (var i = 0; i < arr.length; i++) {
-            key = typeof(arr[i]) + "_" + arr[i];
+            key = typeof (arr[i]) + "_" + arr[i];
             if (!obj[key]) {
                 uniArr.push(arr[i]);
                 obj[key] = true;
@@ -337,6 +336,34 @@ honoka.uniqArray = function (arr) {
     } else {
         throw new Error("not an array!");
     }
+};
+/**
+ * 遍历数组，对其中每个元素执行 fn 函数
+ * @method eachArr
+ * @param  {Array}  arr 被遍历的数组
+ * @param  {Function} fn  执行函数，可以接收两个参数，arr[i] 与索引 i
+ * @author honoka
+ */
+honoka.eachArr = function (arr, fn) {
+        if (honoka.isArray(arr)) {
+            var result = [];
+            for (var i = 0; i < arr.length; i ++) {
+                fn(arr[i], i);
+          }
+          return arr;
+        }
+    };
+    /**
+     * 去除字符串两端的多余空格或 tab
+     * @method stringTrim
+     * @param  {string}   str 被去除空格或 tab 的字符串
+     * @return {string}  处理完毕的字符串
+     * @author honoka
+     */
+honoka.stringTrim = function (str) {
+    var trimReg = /[^\w]/g;
+    var trimStr = str.replace(trimReg, '');
+    return trimStr;
 };
 
 
@@ -362,6 +389,53 @@ honoka.addLoadEvent = function (func) {
             func();
         }
     }
+};
+
+
+/**
+ * 数学操作辅助类
+ */
+ /**
+  * 得到元素都为数值型的数组最大值
+  * @method getMaxOfArr
+  * @param  {Array}    arr 被判断数组
+  * @return {number}   最大值
+  * @author honoka
+  */
+ honoka.getMaxOfArr = function (arr) {
+     var result = Math.max.apply(Math, arr);
+     if (result) {
+         return result;
+     } else {
+         throw new Error("请输入仅包含数值的数组");
+     }
+ };
+ /**
+  * 得到元素都为数值型的数组最小值
+  * @method getMinOfArr
+  * @param  {Array}    arr 被判断数组
+  * @return {number}   最小值
+  * @author honoka
+  */
+ honoka.getMinOfArr = function (arr) {
+     var result = Math.min.apply(Math, arr);
+     if (result) {
+         return result;
+     } else {
+         throw new Error("请输入仅包含数值的数组");
+     }
+ };
+/**
+ * 随机生成一个范围内的数值
+ * @method getRandomNum
+ * @param  {[number]}     lower 最小取值
+ * @param  {[number]}     upper 最大取值
+ * @return {[number]}     lower 到 upper 之间的一个随机数
+ * @author honoka
+ */
+honoka.getRandomNum = function (lower, upper) {
+    var choices = upper - lower + 1;
+    return Math.floor(Math.random() * choices + lower);
 };
 
 

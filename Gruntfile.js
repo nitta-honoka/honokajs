@@ -16,6 +16,7 @@ module.exports = function (grunt) {
                     'src/dom.js',
                     'src/handle.js',
                     'src/event.js',
+                    'src/math.js',
                     'src/_outro.js'
                 ],
                 dest: 'dist/<%= pkg.name.replace(".js", "") %>.js'
@@ -80,6 +81,15 @@ module.exports = function (grunt) {
         watch: {
             files: ['<%= jshint.files %>'],
             tasks: ['concat', 'jshint', 'qunit']
+        },
+
+        shell: {
+            npm: {
+                command: "npm publish"
+            },
+            bower: {
+                command: "bower register honokajs https://github.com/nitta-honoka/honokajs.git"
+            }
         }
 
     });
@@ -90,8 +100,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
+    grunt.loadNpmTasks('grunt-shell');
     // grunt.registerTask('test', ['jshint', 'qunit']);
     grunt.registerTask('test', ['jasmine:coverage']);
+    grunt.registerTask('publish', ['shell:npm', 'shell:bower']);
     grunt.registerTask('default', ['concat', 'jasmine:coverage', 'uglify']);
+
 
 };

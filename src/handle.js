@@ -139,7 +139,7 @@ honoka.uniqArray = function (arr) {
     var key;
     if (honoka.isArray(arr)) {
         for (var i = 0; i < arr.length; i++) {
-            key = typeof(arr[i]) + "_" + arr[i];
+            key = typeof (arr[i]) + "_" + arr[i];
             if (!obj[key]) {
                 uniArr.push(arr[i]);
                 obj[key] = true;
@@ -149,4 +149,32 @@ honoka.uniqArray = function (arr) {
     } else {
         throw new Error("not an array!");
     }
+};
+/**
+ * 遍历数组，对其中每个元素执行 fn 函数
+ * @method eachArr
+ * @param  {Array}  arr 被遍历的数组
+ * @param  {Function} fn  执行函数，可以接收两个参数，arr[i] 与索引 i
+ * @author honoka
+ */
+honoka.eachArr = function (arr, fn) {
+        if (honoka.isArray(arr)) {
+            var result = [];
+            for (var i = 0; i < arr.length; i ++) {
+                fn(arr[i], i);
+          }
+          return arr;
+        }
+    };
+    /**
+     * 去除字符串两端的多余空格或 tab
+     * @method stringTrim
+     * @param  {string}   str 被去除空格或 tab 的字符串
+     * @return {string}  处理完毕的字符串
+     * @author honoka
+     */
+honoka.stringTrim = function (str) {
+    var trimReg = /[^\w]/g;
+    var trimStr = str.replace(trimReg, '');
+    return trimStr;
 };
