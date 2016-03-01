@@ -345,25 +345,41 @@ honoka.uniqArray = function (arr) {
  * @author honoka
  */
 honoka.eachArr = function (arr, fn) {
-        if (honoka.isArray(arr)) {
-            var result = [];
-            for (var i = 0; i < arr.length; i ++) {
-                fn(arr[i], i);
-          }
-          return arr;
+    if (honoka.isArray(arr)) {
+        var result = [];
+        for (var i = 0; i < arr.length; i++) {
+            fn(arr[i], i);
         }
-    };
-    /**
-     * 去除字符串两端的多余空格或 tab
-     * @method stringTrim
-     * @param  {string}   str 被去除空格或 tab 的字符串
-     * @return {string}  处理完毕的字符串
-     * @author honoka
-     */
+        return arr;
+    }
+};
+/**
+ * 去除字符串两端的多余空格或 tab
+ * @method stringTrim
+ * @param  {string}   str 被去除空格或 tab 的字符串
+ * @return {string}  处理完毕的字符串
+ * @author honoka
+ */
 honoka.stringTrim = function (str) {
-    var trimReg = /[^\w]/g;
+    var trimReg = /^\s+|\s+$/g;
     var trimStr = str.replace(trimReg, '');
     return trimStr;
+};
+/**
+ * 获取对象里面第一层元素的数量
+ * @method getObjectLength
+ * @param  {Object}        obj 被获取对象
+ * @return {number}  数量值，整数
+ * @author honoka
+ */
+honoka.getObjectLength = function (obj) {
+    var result = 0;
+    for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            result ++;
+        }
+    }
+    return result;
 };
 
 
@@ -436,6 +452,42 @@ honoka.addLoadEvent = function (func) {
 honoka.getRandomNum = function (lower, upper) {
     var choices = upper - lower + 1;
     return Math.floor(Math.random() * choices + lower);
+};
+
+
+/**
+ * 正则表达式验证辅助类
+ */
+/**
+ * 验证邮箱地址
+ * @method isEmail
+ * @param  {string}  email 邮箱字符串
+ * @return {Boolean} true 是正确格式的邮箱地址
+ * @author honoka
+ */
+honoka.isEmail = function (email) {
+    var _emailReg = /^[a-z0-9A-Z_-]+@[a-z0-9A-Z_-]+\.[a-z0-9A-Z_\-\.]+$/ig;
+    if (_emailReg.test(email)) {
+        return true;
+    } else {
+        return false;
+    }
+};
+/**
+ * 验证是否全是数值，且小于指定长度
+ * @method isNumLength
+ * @param  {string}    numStr    被判断的数值字符串
+ * @param  {number}    length 指定的最大长度
+ * @return {Boolean}  true 该字符串全是数值，且在指定长度范围内
+ * @author honoka
+ */
+honoka.isNumLength = function (numStr, length) {
+    var _numReg = new RegExp("^[0-9]{1," + length + "}$", "g");
+    if (!_numReg.test(numStr)) {
+        return false;
+    } else {
+        return true;
+    }
 };
 
 

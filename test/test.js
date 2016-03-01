@@ -92,7 +92,18 @@ describe("测试数据操作类", function () {
             resArr.push(item * 2);
         });
         expect(resArr).toEqual([4, 8, 12, 16, 20]);
-    })
+    });
+    it("测试获取对象第一层元素数量", function() {
+        var testObj = {
+            a: 1,
+            b: 2,
+            c: {
+                c1: 3,
+                c2: 4
+            }
+        };
+        expect(honoka.getObjectLength(testObj)).toEqual(3);
+    });
 });
 
 describe("数学辅助类", function () {
@@ -106,5 +117,22 @@ describe("数学辅助类", function () {
         var errorArr = ['a', 5, 1, 3, 2];
         expect(honoka.getMaxOfArr(maxAndMinArr)).toEqual(5);
         expect(honoka.getMinOfArr(maxAndMinArr)).toEqual(1);
+    });
+});
+
+describe("正则表达式验证辅助类", function () {
+    it("验证邮箱地址", function() {
+        var email = "abcddd@163.com";
+        var errorEmail = "abc@163@qq.com";
+        expect(honoka.isEmail(email)).toBeTruthy();
+        expect(honoka.isEmail(errorEmail)).toBeFalsy();
+    });
+    it("验证数值字符串，并在长度范围内", function() {
+        var numStr = "829283928";
+        var errorNumStr = "920918sss";
+        var overNum = "953982937582739";
+        expect(honoka.isNumLength(numStr, 9)).toBeTruthy();
+        expect(honoka.isNumLength(errorNumStr, 9)).toBeFalsy();
+        expect(honoka.isNumLength(overNum, 9)).toBeFalsy();
     });
 });

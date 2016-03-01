@@ -158,23 +158,39 @@ honoka.uniqArray = function (arr) {
  * @author honoka
  */
 honoka.eachArr = function (arr, fn) {
-        if (honoka.isArray(arr)) {
-            var result = [];
-            for (var i = 0; i < arr.length; i ++) {
-                fn(arr[i], i);
-          }
-          return arr;
+    if (honoka.isArray(arr)) {
+        var result = [];
+        for (var i = 0; i < arr.length; i++) {
+            fn(arr[i], i);
         }
-    };
-    /**
-     * 去除字符串两端的多余空格或 tab
-     * @method stringTrim
-     * @param  {string}   str 被去除空格或 tab 的字符串
-     * @return {string}  处理完毕的字符串
-     * @author honoka
-     */
+        return arr;
+    }
+};
+/**
+ * 去除字符串两端的多余空格或 tab
+ * @method stringTrim
+ * @param  {string}   str 被去除空格或 tab 的字符串
+ * @return {string}  处理完毕的字符串
+ * @author honoka
+ */
 honoka.stringTrim = function (str) {
-    var trimReg = /[^\w]/g;
+    var trimReg = /^\s+|\s+$/g;
     var trimStr = str.replace(trimReg, '');
     return trimStr;
+};
+/**
+ * 获取对象里面第一层元素的数量
+ * @method getObjectLength
+ * @param  {Object}        obj 被获取对象
+ * @return {number}  数量值，整数
+ * @author honoka
+ */
+honoka.getObjectLength = function (obj) {
+    var result = 0;
+    for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            result ++;
+        }
+    }
+    return result;
 };
