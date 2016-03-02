@@ -104,7 +104,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-shell');
     // grunt.registerTask('test', ['jshint', 'qunit']);
     grunt.registerTask('test', ['jasmine:coverage']);
-    grunt.registerTask('publish', ['shell:npm', 'shell:bower']);
+    grunt.registerTask('pub', ['shell:npm', 'shell:bower']);
     grunt.registerTask('default', ['concat', 'jasmine:coverage', 'uglify']);
 
 

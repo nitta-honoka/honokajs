@@ -1,6 +1,6 @@
 {
   "name": "honokajs",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/honokajs.min.js",
   "description": "A light library of common JavaScript functions ",
   "repository": {
@@ -8,7 +8,10 @@
     "url": "git://github.com/nitta-honoka/honokajs.git"
   },
   "keywords": [
-    "ajax",
+    "Regular expressions",
+    "Math support",
+    "dom support",
+    "verify support",
     "JavaScript Library"
   ],
   "author": "Aolin Xu",

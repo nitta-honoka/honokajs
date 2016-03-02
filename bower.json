@@ -1,6 +1,6 @@
 {
   "name": "honokajs",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/honokajs.min.js",
   "authors": [
     "(Aolin.Xu <xal2008sc@gmail.com>)"
