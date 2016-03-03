@@ -94,8 +94,7 @@ module.exports = function (grunt) {
                 src: ['dist/*.js', 'test/*.js'],
                 options: {
                     destination: 'doc',
-                    template: "node_modules/ink-docstrap/template",
-                    configure: "node_modules/ink-docstrap/template/jsdoc.conf.json"
+                    template: "node_modules/minami/tmpl",
                 }
             }
         }

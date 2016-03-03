@@ -31,8 +31,8 @@
     "grunt-jsdoc": "^1.1.0",
     "grunt-shell": "^1.2.1",
     "grunt-template-jasmine-istanbul": "^0.4.0",
-    "ink-docstrap": "^1.1.4",
-    "jasmine": "^2.4.1"
+    "jasmine": "^2.4.1",
+    "minami": "^1.1.1"
   },
   "config": {
     "commitizen": {
