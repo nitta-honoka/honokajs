@@ -8,7 +8,7 @@
  * @param {Dom Object} newElement
  * @param {Dom Object} targetElement
  */
-honoka.insertAfter = function (newElement, targetElement) {
+Ho.prototype.insertAfter = function (newElement, targetElement) {
     //将目标元素的 parentNode 值（即父节点）保存到变量中
     var parent = targetElement.parentNode;
     if (parent.lastChild === targetElement) {
@@ -24,7 +24,7 @@ honoka.insertAfter = function (newElement, targetElement) {
  * @param node 指定节点
  * @returns
  */
-honoka.getNextElement = function (node) {
+Ho.prototype.getNextElement = function (node) {
     if (node.nodeName == 1) {
         //当 nodeName 等于 1 时为元素节点
         return node;
@@ -40,7 +40,7 @@ honoka.getNextElement = function (node) {
  * @param {Dom Object} element 指定元素对象
  * @param {string} value class值
  */
-honoka.addClass = function (element, value) {
+Ho.prototype.addClass = function (element, value) {
     if (!element.className) {
         //当元素没有 class 时，直接赋值
         element.className = value;
@@ -58,7 +58,7 @@ honoka.addClass = function (element, value) {
  * @param  {[string]}   url     JavaScript 文件路径
  * @param  {Function} callback  加载完成的回调方法
  */
-honoka.loadScript = function (url, callback) {
+Ho.prototype.loadScript = function (url, callback) {
     var script = document.createElement("script");
     script.type = "text/javascript";
     if (script.readyState) { //for IE

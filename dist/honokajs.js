@@ -1,109 +1,50 @@
-(function (root, factory) {
-    if (typeof define === 'function' && define.amd) {  //for AMD && CMD
-        define(factory);
-    } else if (typeof exports === 'object') {  //for CommonJS
-        module.exports = factory;
-    } else {         //for root
-        root.honoka = factory();
-    }
-})(this, function () {
-
-
-    "use strict";
+(function () {
+        "use strict";
 
 
 /* honokajs main */
 
-// Base function.
-var honoka = {};
+//建立 root 对象，在浏览器环境中是 'window'
+        //在服务端环境中是 'global'
+        //或者在一些虚拟环境中是 this
+        //为了 'WebWorker' 的支持使用 'self' 替换 'window'
+        var root = typeof self == 'object' && self.self === self && self ||
+            typeof global == 'object' && global.global === global && global ||
+            this;
 
-
-// Version.
-honoka.VERSION = '0.1.5';
-
-
-/**
- * Created by honoka on 16/2/27.
- * ajax辅助库
- */
-/**
- * 以 get 方式发送请求
- * @param {string} url  请求链接
- * @param {Object} options 配置项
- * 配置项内容：
- * {boolean} async true异步方式，false 同步方式
- * {function} succ 请求成功后的回调函数
- * {function} fail 请求失败后的回调函数
- */
-honoka.get = function (url, options) {
-    honoka.send(url, "GET", options);
-};
-/**
- * 以 get 方式读取数据
- * @param {string} url  请求链接
- * @param {Object} options 配置项
- * 配置项内容：
- * {boolean} async true异步方式，false 同步方式
- * {function} succ 请求成功后的回调函数
- * {function} fail 请求失败后的回调函数
- */
-honoka.load = function (url, options) {
-    honoka.send(url, "GET", options);
-};
-/**
- * 以 post 方式发送请求
- * @param {string} url  请求链接
- * @param {Object} options 配置项
- * 配置项内容：
- * {Object} data 请求参数
- * {boolean} async true异步方式，false 同步方式
- * {function} succ 请求成功后的回调函数
- * {function} fail 请求失败后的回调函数
- */
-honoka.post = function (url, options) {
-    honoka.send(url, "POST", options);
-};
-/**
- * 发送 ajax 请求
- * @param {string} url 请求链接
- * @param {string} method 请求方式
- * @param {object} options 选项
- */
-honoka.send = function (url, method, options) {
-    var data = options.data || {}; //请求参数
-    var async = options.async || true; //同步或者异步，默认异步
-    var succCallback = options.succ; //成功时的回调方法
-    var failCallback = options.fail; //失败时的回调方法
-    var request = honoka.getAjaxObj();
-    request.open(method, url, async);
-    if (data instanceof Object) {
-        data = JSON.stringify(data);
-        request.setRequestHeader('Content-Type', 'application/json');
-    }
-    request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-    request.send(data);
-    if (succCallback instanceof Function) {
-        request.onreadystatechange = function () {
-            if (request.readyState === 4 && (request.status === 200)) {
-                succCallback(request.responseText);
+        //构造函数
+        var Ho = function(obj) {
+            if (obj instanceof Ho) {
+                return obj;
             }
-            else if (request.status === 400 || request.status === 404 || request.status === 500) {
-                failCallback()
+            if (!(this instanceof Ho)) {
+                return new Ho(obj);
             }
+            this._wrapped = obj;
         };
-    }
-};
-/**
- * 获得 XHR 对象
- * @returns {XMLHttpRequest} XHR 对象
- */
-honoka.getAjaxObj = function () {
-    if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
-        return new XMLHttpRequest();
-    } else { // code for IE6, IE5
-        return new ActiveXObject("Microsoft.XMLHTTP");
-    }
-};
+
+        //添加 CommonJS 语法支持
+        //如果在浏览器中，将 'Ho' 作为全局对象加入
+        //'nodeType' 用来确保 'module' 和 'exports' 不是一个 HTML 元素
+        if (typeof exports != 'undefined' && !exports.nodeType) {
+            if (typeof module != 'undefined' && !module.nodeType && module.exports) {
+                exports = module.exports = Ho;
+            }
+            exports.Ho = Ho;
+        } else {
+            root.Ho = Ho;
+        }
+
+//添加 AMD 与 CMD 支持
+if (typeof define == 'function' && define.amd) {
+    define('honoka', [], function() {
+       return Ho;
+    });
+}
+// Version.
+Ho.VERSION = '0.1.6';
+
+
 
 /**
  * Created by honoka on 16/2/27.
@@ -115,7 +56,7 @@ honoka.getAjaxObj = function () {
  * @param {Dom Object} newElement
  * @param {Dom Object} targetElement
  */
-honoka.insertAfter = function (newElement, targetElement) {
+Ho.prototype.insertAfter = function (newElement, targetElement) {
     //将目标元素的 parentNode 值（即父节点）保存到变量中
     var parent = targetElement.parentNode;
     if (parent.lastChild === targetElement) {
@@ -131,7 +72,7 @@ honoka.insertAfter = function (newElement, targetElement) {
  * @param node 指定节点
  * @returns
  */
-honoka.getNextElement = function (node) {
+Ho.prototype.getNextElement = function (node) {
     if (node.nodeName == 1) {
         //当 nodeName 等于 1 时为元素节点
         return node;
@@ -147,7 +88,7 @@ honoka.getNextElement = function (node) {
  * @param {Dom Object} element 指定元素对象
  * @param {string} value class值
  */
-honoka.addClass = function (element, value) {
+Ho.prototype.addClass = function (element, value) {
     if (!element.className) {
         //当元素没有 class 时，直接赋值
         element.className = value;
@@ -165,7 +106,7 @@ honoka.addClass = function (element, value) {
  * @param  {[string]}   url     JavaScript 文件路径
  * @param  {Function} callback  加载完成的回调方法
  */
-honoka.loadScript = function (url, callback) {
+Ho.prototype.loadScript = function (url, callback) {
     var script = document.createElement("script");
     script.type = "text/javascript";
     if (script.readyState) { //for IE
@@ -194,7 +135,7 @@ honoka.loadScript = function (url, callback) {
  * @param {Array} arr 判断数组
  * @retrun Boolean true 是数组类型
  */
-honoka.isArray = function (arr) {
+Ho.prototype.isArray = function (arr) {
     //当页面存在多个全局作用域时，使用 instanceof 判断不同作用域的引用类型会造成混乱
     //故调用 Object 原生方法 toString 判断
     return Object.prototype.toString.call(arr) == "[object Array]";
@@ -204,7 +145,7 @@ honoka.isArray = function (arr) {
  * @param {Function} fn 被判断函数
  * @retrun Boolean true 是函数类型
  */
-honoka.isFunction = function (fn) {
+Ho.prototype.isFunction = function (fn) {
     return Object.prototype.toString.call(fn) == "[object Function]";
 };
 /**
@@ -214,7 +155,7 @@ honoka.isFunction = function (fn) {
  * @return {Boolean}  true 是日期类型
  * @author honoka
  */
-honoka.isDate = function (date) {
+Ho.prototype.isDate = function (date) {
     return Object.prototype.toString.call(date) == "[object Date]";
 };
 /**
@@ -224,7 +165,7 @@ honoka.isDate = function (date) {
  * @return {Boolean}  true 是正则表达式类型
  * @author honoka
  */
-honoka.isRegExp = function (reg) {
+Ho.prototype.isRegExp = function (reg) {
     return Object.prototype.toString.call(reg) == "[object RegExp]";
 };
 /**
@@ -234,7 +175,7 @@ honoka.isRegExp = function (reg) {
  * @return {Boolean}  true 是字符串类型
  * @author honoka
  */
-honoka.isString = function (str) {
+Ho.prototype.isString = function (str) {
     return Object.prototype.toString.call(str) == "[object String]";
 };
 /**
@@ -244,7 +185,7 @@ honoka.isString = function (str) {
  * @return {Boolean}  true 是数值类型
  * @author honoka
  */
-honoka.isNumber = function (num) {
+Ho.prototype.isNumber = function (num) {
     return Object.prototype.toString.call(num) == "[object Number]";
 };
 /**
@@ -254,7 +195,7 @@ honoka.isNumber = function (num) {
  * @return {Boolean}  true 是布尔类型
  * @author honoka
  */
-honoka.isBoolean = function (bol) {
+Ho.prototype.isBoolean = function (bol) {
     return Object.prototype.toString.call(bol) == "[object Boolean]";
 };
 /**
@@ -264,7 +205,7 @@ honoka.isBoolean = function (bol) {
  * @return {Boolean}  true 是对象
  * @author honoka
  */
-honoka.isObject = function (obj) {
+Ho.prototype.isObject = function (obj) {
     return Object.prototype.toString.call(obj) == "[object Object]";
 };
 /**
@@ -274,38 +215,38 @@ honoka.isObject = function (obj) {
  * @return {Object} result 产生的新对象
  * @author honoka
  */
-honoka.cloneObject = function (src) {
+Ho.prototype.cloneObject = function (src) {
     //如果是基本类型值
     if (src == null || (typeof src != "object")) {
         var result = src;
         return result;
     }
     //使用构造函数创建的基本类型的包装类
-    else if (honoka.isString(src) && typeof src == "object") {
-        return result = new String(src.valueOf());
-    } else if (honoka.isNumber(src) && typeof src == "object") {
-        return result = new Number(src.valueOf());
-    } else if (honoka.isBoolean(src) && typeof src == "object") {
-        return result = new Boolean(src.valueOf());
-    } else if (honoka.isArray(src)) { //如果是数组类型
+    else if (this.isString(src) && typeof src == "object") {
+        return new String(src.valueOf());
+    } else if (this.isNumber(src) && typeof src == "object") {
+        return new Number(src.valueOf());
+    } else if (this.isBoolean(src) && typeof src == "object") {
+        return new Boolean(src.valueOf());
+    } else if (this.isArray(src)) { //如果是数组类型
         var result = [];
         for (var i = 0; i < src.length; i++) {
-            result[i] = honoka.cloneObject(src[i]);
+            result[i] = this.cloneObject(src[i]);
         }
         return result;
-    } else if (honoka.isDate(src)) {
+    } else if (this.isDate(src)) {
         var result = new Date();
         result.setTime(src.getTime());
         return result;
-    } else if (honoka.isObject(src)) {
+    } else if (this.isObject(src)) {
         var result = {};
         for (var attr in src) {
             if (src.hasOwnProperty(attr)) {
-                result[attr] = honoka.cloneObject(src[attr]);
+                result[attr] = this.cloneObject(src[attr]);
             }
         }
         return result;
-    } else if (honoka.isRegExp(src)) {
+    } else if (this.isRegExp(src)) {
         var flags = "";
         flags += src.global ? "g" : "";
         flags += src.multiline ? "m" : "";
@@ -320,11 +261,11 @@ honoka.cloneObject = function (src) {
  * @return {Array}      去重完毕的字符串
  * @author honoka
  */
-honoka.uniqArray = function (arr) {
+Ho.prototype.uniqArray = function (arr) {
     var uniArr = [];
     var obj = {};
     var key;
-    if (honoka.isArray(arr)) {
+    if (this.isArray(arr)) {
         for (var i = 0; i < arr.length; i++) {
             key = typeof (arr[i]) + "_" + arr[i];
             if (!obj[key]) {
@@ -344,9 +285,8 @@ honoka.uniqArray = function (arr) {
  * @param  {Function} fn  执行函数，可以接收两个参数，arr[i] 与索引 i
  * @author honoka
  */
-honoka.eachArr = function (arr, fn) {
-    if (honoka.isArray(arr)) {
-        var result = [];
+Ho.prototype.eachArr = function (arr, fn) {
+    if (this.isArray(arr)) {
         for (var i = 0; i < arr.length; i++) {
             fn(arr[i], i);
         }
@@ -360,7 +300,7 @@ honoka.eachArr = function (arr, fn) {
  * @return {string}  处理完毕的字符串
  * @author honoka
  */
-honoka.stringTrim = function (str) {
+Ho.prototype.stringTrim = function (str) {
     var trimReg = /^\s+|\s+$/g;
     var trimStr = str.replace(trimReg, '');
     return trimStr;
@@ -372,7 +312,7 @@ honoka.stringTrim = function (str) {
  * @return {number}  数量值，整数
  * @author honoka
  */
-honoka.getObjectLength = function (obj) {
+Ho.prototype.getObjectLength = function (obj) {
     var result = 0;
     for (var key in obj) {
         if (obj.hasOwnProperty(key)) {
@@ -392,7 +332,7 @@ honoka.getObjectLength = function (obj) {
  * 将函数绑定到 onload 事件上
  * @param {function} func 需绑定的函数
  */
-honoka.addLoadEvent = function (func) {
+Ho.prototype.addLoadEvent = function (func) {
     //把现有的 window.onload 事件处理函数的值存入变量
     var oldOnload = window.onload;
     if (typeof window.onload != "function") {
@@ -418,7 +358,7 @@ honoka.addLoadEvent = function (func) {
   * @return {number}   最大值
   * @author honoka
   */
- honoka.getMaxOfArr = function (arr) {
+ Ho.prototype.getMaxOfArr = function (arr) {
      var result = Math.max.apply(Math, arr);
      if (result) {
          return result;
@@ -433,7 +373,7 @@ honoka.addLoadEvent = function (func) {
   * @return {number}   最小值
   * @author honoka
   */
- honoka.getMinOfArr = function (arr) {
+ Ho.prototype.getMinOfArr = function (arr) {
      var result = Math.min.apply(Math, arr);
      if (result) {
          return result;
@@ -449,7 +389,7 @@ honoka.addLoadEvent = function (func) {
  * @return {[number]}     lower 到 upper 之间的一个随机数
  * @author honoka
  */
-honoka.getRandomNum = function (lower, upper) {
+Ho.prototype.getRandomNum = function (lower, upper) {
     var choices = upper - lower + 1;
     return Math.floor(Math.random() * choices + lower);
 };
@@ -465,7 +405,7 @@ honoka.getRandomNum = function (lower, upper) {
  * @return {Boolean} true 是正确格式的邮箱地址
  * @author honoka
  */
-honoka.isEmail = function (email) {
+Ho.prototype.isEmail = function (email) {
     var _emailReg = /^[a-z0-9A-Z_-]+@[a-z0-9A-Z_-]+\.[a-z0-9A-Z_\-\.]+$/ig;
     if (_emailReg.test(email)) {
         return true;
@@ -482,7 +422,7 @@ honoka.isEmail = function (email) {
  * @return {Boolean}  true 该字符串全是数值，且在指定长度范围内
  * @author honoka
  */
-honoka.isDigit = function (numStr, lowwer, upper) {
+Ho.prototype.isDigit = function (numStr, lowwer, upper) {
     var _numReg = new RegExp("^[0-9]{" + lowwer + "," + upper + "}$", "g");
     if (!_numReg.test(numStr)) {
         return false;
@@ -499,7 +439,7 @@ honoka.isDigit = function (numStr, lowwer, upper) {
  * @return {Boolean}  true  字符串符合验证条件
  * @author honoka
  */
-honoka.isRegisterName = function (regStr, lowwer, upper) {
+Ho.prototype.isRegisterName = function (regStr, lowwer, upper) {
     var _regRegister = new RegExp("^[a-zA-Z_]{1}[a-zA-Z0-9_\-]{" + (lowwer - 1) + "," + upper + "}$", "ig");
     if (_regRegister.test(regStr)) {
         return true;
@@ -516,7 +456,7 @@ honoka.isRegisterName = function (regStr, lowwer, upper) {
  * @return {Boolean}  true 符合验证条件
  * @author honoka
  */
-honoka.isTrueName = function (name, lowwer, upper) {
+Ho.prototype.isTrueName = function (name, lowwer, upper) {
     var _regTrueName = new RegExp("^[a-zA-Z\u4e00-\u9fa5\·\s]{" + lowwer + "," + upper + "}$", "ig");
     if (_regTrueName.test(name)) {
         return true;
@@ -533,7 +473,7 @@ honoka.isTrueName = function (name, lowwer, upper) {
  * @return {Boolean}  true 符合验证条件
  * @author honoka
  */
-honoka.isPasswd = function (passwd, lowwer, upper) {
+Ho.prototype.isPasswd = function (passwd, lowwer, upper) {
     var _regPasswd = new RegExp("^[a-z0-9A-Z@_\-]{" + lowwer + "," + upper + "}$", "ig");
     if (_regPasswd.test(passwd)) {
         return true;
@@ -548,7 +488,7 @@ honoka.isPasswd = function (passwd, lowwer, upper) {
  * @return {Boolean} true 符合验证条件
  * @author honoka
  */
-honoka.isTel = function (tel) {
+Ho.prototype.isTel = function (tel) {
     var _regTel = /^\(?0\d{2}[) \-]?\d{7}$/g;
     if (_regTel.test(tel)) {
         return true;
@@ -563,7 +503,7 @@ honoka.isTel = function (tel) {
  * @return {Boolean} true 符合验证条件
  * @author honoka
  */
-honoka.isMobile = function (mobNum) {
+Ho.prototype.isMobile = function (mobNum) {
     var _regMob = /(^(\+86)?[\- ]?(13\d|14[57]|15[^4,\D]|17[678]|18\d)\d{8}|170[059]\d{7})$/g;
     if (_regMob.test(mobNum)) {
         return true;
@@ -578,7 +518,7 @@ honoka.isMobile = function (mobNum) {
  * @return {Boolean} true 符合验证条件
  * @author honoka
  */
-honoka.isIP = function (ip) {
+Ho.prototype.isIP = function (ip) {
     var _regIP = /^((2[0-4]\d|25[0-5]|[01]?\d\d?)\.){3}(2[0-4]\d|25[0-5]|[01]?\d\d?)$/g;
     if (_regIP.test(ip)) {
         return true;
@@ -593,7 +533,7 @@ honoka.isIP = function (ip) {
  * @return {Boolean} true 符合验证条件
  * @author honoka
  */
-honoka.isIDCard = function (idCode) {
+Ho.prototype.isIDCard = function (idCode) {
     var _regID = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x|#)$)/g;
     if (_regID.test(idCode)) {
         return true;
@@ -603,6 +543,88 @@ honoka.isIDCard = function (idCode) {
 };
 
 
-    return honoka;
+/**
+ * Created by honoka on 16/2/27.
+ * ajax辅助库
+ */
+/**
+ * 以 get 方式发送请求
+ * @param {string} url  请求链接
+ * @param {Object} options 配置项
+ * 配置项内容：
+ * {boolean} async true异步方式，false 同步方式
+ * {function} succ 请求成功后的回调函数
+ * {function} fail 请求失败后的回调函数
+ */
+Ho.prototype.get = function (url, options) {
+    send(url, "GET", options);
+};
+/**
+ * 以 get 方式读取数据
+ * @param {string} url  请求链接
+ * @param {Object} options 配置项
+ * 配置项内容：
+ * {boolean} async true异步方式，false 同步方式
+ * {function} succ 请求成功后的回调函数
+ * {function} fail 请求失败后的回调函数
+ */
+Ho.prototype.load = function (url, options) {
+    send(url, "GET", options);
+};
+/**
+ * 以 post 方式发送请求
+ * @param {string} url  请求链接
+ * @param {Object} options 配置项
+ * 配置项内容：
+ * {Object} data 请求参数
+ * {boolean} async true异步方式，false 同步方式
+ * {function} succ 请求成功后的回调函数
+ * {function} fail 请求失败后的回调函数
+ */
+Ho.prototype.post = function (url, options) {
+    send(url, "POST", options);
+};
+/**
+ * 发送 ajax 请求
+ * @param {string} url 请求链接
+ * @param {string} metHod 请求方式
+ * @param {object} options 选项
+ */
+function send(url, method, options) {
+    var data = options.data || {}; //请求参数
+    var async = options.async || true; //同步或者异步，默认异步
+    var succCallback = options.succ; //成功时的回调方法
+    var failCallback = options.fail; //失败时的回调方法
+    var request = getAjaxObj();
+    request.open(method, url, async);
+    if (data instanceof Object) {
+        data = JSON.stringify(data);
+        request.setRequestHeader('Content-Type', 'application/json');
+    }
+    request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    request.send(data);
+    if (succCallback instanceof Function) {
+        request.onreadystatechange = function () {
+            if (request.readyState === 4 && (request.status === 200)) {
+                succCallback(request.responseText);
+            } else if (request.status === 400 || request.status === 404 || request.status === 500) {
+                failCallback()
+            }
+        };
+    }
+};
+/**
+ * 获得 XHR 对象
+ * @returns {XMLHttpRequest} XHR 对象
+ */
+function getAjaxObj() {
+    if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+        return new XMLHttpRequest();
+    } else { // code for IE6, IE5
+        return new ActiveXObject("Microsoft.XMLHTTP");
+    }
+};
 
-});
+
+
+}());

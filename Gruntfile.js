@@ -12,12 +12,12 @@ module.exports = function (grunt) {
                 src: [
                     'src/_intro.js',
                     'src/main.js',
-                    'src/ajax.js',
                     'src/dom.js',
                     'src/handle.js',
                     'src/event.js',
                     'src/math.js',
                     'src/regExpVerify.js',
+                    'src/ajax.js',
                     'src/_outro.js'
                 ],
                 dest: 'dist/<%= pkg.name.replace(".js", "") %>.js'

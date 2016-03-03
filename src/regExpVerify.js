@@ -8,7 +8,7 @@
  * @return {Boolean} true 是正确格式的邮箱地址
  * @author honoka
  */
-honoka.isEmail = function (email) {
+Ho.prototype.isEmail = function (email) {
     var _emailReg = /^[a-z0-9A-Z_-]+@[a-z0-9A-Z_-]+\.[a-z0-9A-Z_\-\.]+$/ig;
     if (_emailReg.test(email)) {
         return true;
@@ -25,7 +25,7 @@ honoka.isEmail = function (email) {
  * @return {Boolean}  true 该字符串全是数值，且在指定长度范围内
  * @author honoka
  */
-honoka.isDigit = function (numStr, lowwer, upper) {
+Ho.prototype.isDigit = function (numStr, lowwer, upper) {
     var _numReg = new RegExp("^[0-9]{" + lowwer + "," + upper + "}$", "g");
     if (!_numReg.test(numStr)) {
         return false;
@@ -42,7 +42,7 @@ honoka.isDigit = function (numStr, lowwer, upper) {
  * @return {Boolean}  true  字符串符合验证条件
  * @author honoka
  */
-honoka.isRegisterName = function (regStr, lowwer, upper) {
+Ho.prototype.isRegisterName = function (regStr, lowwer, upper) {
     var _regRegister = new RegExp("^[a-zA-Z_]{1}[a-zA-Z0-9_\-]{" + (lowwer - 1) + "," + upper + "}$", "ig");
     if (_regRegister.test(regStr)) {
         return true;
@@ -59,7 +59,7 @@ honoka.isRegisterName = function (regStr, lowwer, upper) {
  * @return {Boolean}  true 符合验证条件
  * @author honoka
  */
-honoka.isTrueName = function (name, lowwer, upper) {
+Ho.prototype.isTrueName = function (name, lowwer, upper) {
     var _regTrueName = new RegExp("^[a-zA-Z\u4e00-\u9fa5\·\s]{" + lowwer + "," + upper + "}$", "ig");
     if (_regTrueName.test(name)) {
         return true;
@@ -76,7 +76,7 @@ honoka.isTrueName = function (name, lowwer, upper) {
  * @return {Boolean}  true 符合验证条件
  * @author honoka
  */
-honoka.isPasswd = function (passwd, lowwer, upper) {
+Ho.prototype.isPasswd = function (passwd, lowwer, upper) {
     var _regPasswd = new RegExp("^[a-z0-9A-Z@_\-]{" + lowwer + "," + upper + "}$", "ig");
     if (_regPasswd.test(passwd)) {
         return true;
@@ -91,7 +91,7 @@ honoka.isPasswd = function (passwd, lowwer, upper) {
  * @return {Boolean} true 符合验证条件
  * @author honoka
  */
-honoka.isTel = function (tel) {
+Ho.prototype.isTel = function (tel) {
     var _regTel = /^\(?0\d{2}[) \-]?\d{7}$/g;
     if (_regTel.test(tel)) {
         return true;
@@ -106,7 +106,7 @@ honoka.isTel = function (tel) {
  * @return {Boolean} true 符合验证条件
  * @author honoka
  */
-honoka.isMobile = function (mobNum) {
+Ho.prototype.isMobile = function (mobNum) {
     var _regMob = /(^(\+86)?[\- ]?(13\d|14[57]|15[^4,\D]|17[678]|18\d)\d{8}|170[059]\d{7})$/g;
     if (_regMob.test(mobNum)) {
         return true;
@@ -121,7 +121,7 @@ honoka.isMobile = function (mobNum) {
  * @return {Boolean} true 符合验证条件
  * @author honoka
  */
-honoka.isIP = function (ip) {
+Ho.prototype.isIP = function (ip) {
     var _regIP = /^((2[0-4]\d|25[0-5]|[01]?\d\d?)\.){3}(2[0-4]\d|25[0-5]|[01]?\d\d?)$/g;
     if (_regIP.test(ip)) {
         return true;
@@ -136,7 +136,7 @@ honoka.isIP = function (ip) {
  * @return {Boolean} true 符合验证条件
  * @author honoka
  */
-honoka.isIDCard = function (idCode) {
+Ho.prototype.isIDCard = function (idCode) {
     var _regID = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x|#)$)/g;
     if (_regID.test(idCode)) {
         return true;

@@ -7,7 +7,7 @@
  * @param {Array} arr 判断数组
  * @retrun Boolean true 是数组类型
  */
-honoka.isArray = function (arr) {
+Ho.prototype.isArray = function (arr) {
     //当页面存在多个全局作用域时，使用 instanceof 判断不同作用域的引用类型会造成混乱
     //故调用 Object 原生方法 toString 判断
     return Object.prototype.toString.call(arr) == "[object Array]";
@@ -17,7 +17,7 @@ honoka.isArray = function (arr) {
  * @param {Function} fn 被判断函数
  * @retrun Boolean true 是函数类型
  */
-honoka.isFunction = function (fn) {
+Ho.prototype.isFunction = function (fn) {
     return Object.prototype.toString.call(fn) == "[object Function]";
 };
 /**
@@ -27,7 +27,7 @@ honoka.isFunction = function (fn) {
  * @return {Boolean}  true 是日期类型
  * @author honoka
  */
-honoka.isDate = function (date) {
+Ho.prototype.isDate = function (date) {
     return Object.prototype.toString.call(date) == "[object Date]";
 };
 /**
@@ -37,7 +37,7 @@ honoka.isDate = function (date) {
  * @return {Boolean}  true 是正则表达式类型
  * @author honoka
  */
-honoka.isRegExp = function (reg) {
+Ho.prototype.isRegExp = function (reg) {
     return Object.prototype.toString.call(reg) == "[object RegExp]";
 };
 /**
@@ -47,7 +47,7 @@ honoka.isRegExp = function (reg) {
  * @return {Boolean}  true 是字符串类型
  * @author honoka
  */
-honoka.isString = function (str) {
+Ho.prototype.isString = function (str) {
     return Object.prototype.toString.call(str) == "[object String]";
 };
 /**
@@ -57,7 +57,7 @@ honoka.isString = function (str) {
  * @return {Boolean}  true 是数值类型
  * @author honoka
  */
-honoka.isNumber = function (num) {
+Ho.prototype.isNumber = function (num) {
     return Object.prototype.toString.call(num) == "[object Number]";
 };
 /**
@@ -67,7 +67,7 @@ honoka.isNumber = function (num) {
  * @return {Boolean}  true 是布尔类型
  * @author honoka
  */
-honoka.isBoolean = function (bol) {
+Ho.prototype.isBoolean = function (bol) {
     return Object.prototype.toString.call(bol) == "[object Boolean]";
 };
 /**
@@ -77,7 +77,7 @@ honoka.isBoolean = function (bol) {
  * @return {Boolean}  true 是对象
  * @author honoka
  */
-honoka.isObject = function (obj) {
+Ho.prototype.isObject = function (obj) {
     return Object.prototype.toString.call(obj) == "[object Object]";
 };
 /**
@@ -87,38 +87,38 @@ honoka.isObject = function (obj) {
  * @return {Object} result 产生的新对象
  * @author honoka
  */
-honoka.cloneObject = function (src) {
+Ho.prototype.cloneObject = function (src) {
     //如果是基本类型值
     if (src == null || (typeof src != "object")) {
         var result = src;
         return result;
     }
     //使用构造函数创建的基本类型的包装类
-    else if (honoka.isString(src) && typeof src == "object") {
-        return result = new String(src.valueOf());
-    } else if (honoka.isNumber(src) && typeof src == "object") {
-        return result = new Number(src.valueOf());
-    } else if (honoka.isBoolean(src) && typeof src == "object") {
-        return result = new Boolean(src.valueOf());
-    } else if (honoka.isArray(src)) { //如果是数组类型
+    else if (this.isString(src) && typeof src == "object") {
+        return new String(src.valueOf());
+    } else if (this.isNumber(src) && typeof src == "object") {
+        return new Number(src.valueOf());
+    } else if (this.isBoolean(src) && typeof src == "object") {
+        return new Boolean(src.valueOf());
+    } else if (this.isArray(src)) { //如果是数组类型
         var result = [];
         for (var i = 0; i < src.length; i++) {
-            result[i] = honoka.cloneObject(src[i]);
+            result[i] = this.cloneObject(src[i]);
         }
         return result;
-    } else if (honoka.isDate(src)) {
+    } else if (this.isDate(src)) {
         var result = new Date();
         result.setTime(src.getTime());
         return result;
-    } else if (honoka.isObject(src)) {
+    } else if (this.isObject(src)) {
         var result = {};
         for (var attr in src) {
             if (src.hasOwnProperty(attr)) {
-                result[attr] = honoka.cloneObject(src[attr]);
+                result[attr] = this.cloneObject(src[attr]);
             }
         }
         return result;
-    } else if (honoka.isRegExp(src)) {
+    } else if (this.isRegExp(src)) {
         var flags = "";
         flags += src.global ? "g" : "";
         flags += src.multiline ? "m" : "";
@@ -133,11 +133,11 @@ honoka.cloneObject = function (src) {
  * @return {Array}      去重完毕的字符串
  * @author honoka
  */
-honoka.uniqArray = function (arr) {
+Ho.prototype.uniqArray = function (arr) {
     var uniArr = [];
     var obj = {};
     var key;
-    if (honoka.isArray(arr)) {
+    if (this.isArray(arr)) {
         for (var i = 0; i < arr.length; i++) {
             key = typeof (arr[i]) + "_" + arr[i];
             if (!obj[key]) {
@@ -157,9 +157,8 @@ honoka.uniqArray = function (arr) {
  * @param  {Function} fn  执行函数，可以接收两个参数，arr[i] 与索引 i
  * @author honoka
  */
-honoka.eachArr = function (arr, fn) {
-    if (honoka.isArray(arr)) {
-        var result = [];
+Ho.prototype.eachArr = function (arr, fn) {
+    if (this.isArray(arr)) {
         for (var i = 0; i < arr.length; i++) {
             fn(arr[i], i);
         }
@@ -173,7 +172,7 @@ honoka.eachArr = function (arr, fn) {
  * @return {string}  处理完毕的字符串
  * @author honoka
  */
-honoka.stringTrim = function (str) {
+Ho.prototype.stringTrim = function (str) {
     var trimReg = /^\s+|\s+$/g;
     var trimStr = str.replace(trimReg, '');
     return trimStr;
@@ -185,7 +184,7 @@ honoka.stringTrim = function (str) {
  * @return {number}  数量值，整数
  * @author honoka
  */
-honoka.getObjectLength = function (obj) {
+Ho.prototype.getObjectLength = function (obj) {
     var result = 0;
     for (var key in obj) {
         if (obj.hasOwnProperty(key)) {

@@ -8,7 +8,7 @@
   * @return {number}   最大值
   * @author honoka
   */
- honoka.getMaxOfArr = function (arr) {
+ Ho.prototype.getMaxOfArr = function (arr) {
      var result = Math.max.apply(Math, arr);
      if (result) {
          return result;
@@ -23,7 +23,7 @@
   * @return {number}   最小值
   * @author honoka
   */
- honoka.getMinOfArr = function (arr) {
+ Ho.prototype.getMinOfArr = function (arr) {
      var result = Math.min.apply(Math, arr);
      if (result) {
          return result;
@@ -39,7 +39,7 @@
  * @return {[number]}     lower 到 upper 之间的一个随机数
  * @author honoka
  */
-honoka.getRandomNum = function (lower, upper) {
+Ho.prototype.getRandomNum = function (lower, upper) {
     var choices = upper - lower + 1;
     return Math.floor(Math.random() * choices + lower);
 };

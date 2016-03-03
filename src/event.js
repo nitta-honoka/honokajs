@@ -7,7 +7,7 @@
  * 将函数绑定到 onload 事件上
  * @param {function} func 需绑定的函数
  */
-honoka.addLoadEvent = function (func) {
+Ho.prototype.addLoadEvent = function (func) {
     //把现有的 window.onload 事件处理函数的值存入变量
     var oldOnload = window.onload;
     if (typeof window.onload != "function") {
