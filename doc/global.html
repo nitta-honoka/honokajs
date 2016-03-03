@@ -1,69 +1,41 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>DocStrap Global</title>
+    <meta charset="utf-8">
+    <title>Global - Documentation</title>
 
-	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
-
-	<link type="text/css" rel="stylesheet" href="styles/site.cosmo.css">
-
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
 </head>
-
 <body>
 
-<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
-<div class="container">
-	<div class="navbar-header">
-		<a class="navbar-brand" href="index.html">DocStrap</a>
-		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-        </button>
-	</div>
-	<div class="navbar-collapse collapse" id="topNavigation">
-		<ul class="nav navbar-nav">
-			
-			<li class="dropdown">
-				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
-				<ul class="dropdown-menu ">
-					<li><a href="global.html#addClass">addClass</a></li><li><a href="global.html#addLoadEvent">addLoadEvent</a></li><li><a href="global.html#cloneObject">cloneObject</a></li><li><a href="global.html#eachArr">eachArr</a></li><li><a href="global.html#get">get</a></li><li><a href="global.html#getMaxOfArr">getMaxOfArr</a></li><li><a href="global.html#getMinOfArr">getMinOfArr</a></li><li><a href="global.html#getNextElement">getNextElement</a></li><li><a href="global.html#getObjectLength">getObjectLength</a></li><li><a href="global.html#getRandomNum">getRandomNum</a></li><li><a href="global.html#insertAfter">insertAfter</a></li><li><a href="global.html#isArray">isArray</a></li><li><a href="global.html#isBoolean">isBoolean</a></li><li><a href="global.html#isDate">isDate</a></li><li><a href="global.html#isEmail">isEmail</a></li><li><a href="global.html#isFunction">isFunction</a></li><li><a href="global.html#isIDCard">isIDCard</a></li><li><a href="global.html#isIP">isIP</a></li><li><a href="global.html#isMobile">isMobile</a></li><li><a href="global.html#isNumber">isNumber</a></li><li><a href="global.html#isNumLength">isNumLength</a></li><li><a href="global.html#isObject">isObject</a></li><li><a href="global.html#isPasswd">isPasswd</a></li><li><a href="global.html#isRegExp">isRegExp</a></li><li><a href="global.html#isRegisterName">isRegisterName</a></li><li><a href="global.html#isString">isString</a></li><li><a href="global.html#isTel">isTel</a></li><li><a href="global.html#isTrueName">isTrueName</a></li><li><a href="global.html#load">load</a></li><li><a href="global.html#loadScript">loadScript</a></li><li><a href="global.html#post">post</a></li><li><a href="global.html#stringTrim">stringTrim</a></li><li><a href="global.html#uniqArray">uniqArray</a></li>
-				</ul>
-			</li>
-			
-		</ul>
-		<div class="col-sm-3 col-md-3">
-            <form class="navbar-form" role="search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
-                    </div>
-                </div>
-            </form>
-        </div>
-	</div>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
 
-</div>
-</div>
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#addClass">addClass</a></li><li><a href="global.html#addLoadEvent">addLoadEvent</a></li><li><a href="global.html#cloneObject">cloneObject</a></li><li><a href="global.html#eachArr">eachArr</a></li><li><a href="global.html#get">get</a></li><li><a href="global.html#getMaxOfArr">getMaxOfArr</a></li><li><a href="global.html#getMinOfArr">getMinOfArr</a></li><li><a href="global.html#getNextElement">getNextElement</a></li><li><a href="global.html#getObjectLength">getObjectLength</a></li><li><a href="global.html#getRandomNum">getRandomNum</a></li><li><a href="global.html#insertAfter">insertAfter</a></li><li><a href="global.html#isArray">isArray</a></li><li><a href="global.html#isBoolean">isBoolean</a></li><li><a href="global.html#isDate">isDate</a></li><li><a href="global.html#isEmail">isEmail</a></li><li><a href="global.html#isFunction">isFunction</a></li><li><a href="global.html#isIDCard">isIDCard</a></li><li><a href="global.html#isIP">isIP</a></li><li><a href="global.html#isMobile">isMobile</a></li><li><a href="global.html#isNumber">isNumber</a></li><li><a href="global.html#isNumLength">isNumLength</a></li><li><a href="global.html#isObject">isObject</a></li><li><a href="global.html#isPasswd">isPasswd</a></li><li><a href="global.html#isRegExp">isRegExp</a></li><li><a href="global.html#isRegisterName">isRegisterName</a></li><li><a href="global.html#isString">isString</a></li><li><a href="global.html#isTel">isTel</a></li><li><a href="global.html#isTrueName">isTrueName</a></li><li><a href="global.html#load">load</a></li><li><a href="global.html#loadScript">loadScript</a></li><li><a href="global.html#post">post</a></li><li><a href="global.html#stringTrim">stringTrim</a></li><li><a href="global.html#uniqArray">uniqArray</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Global</h1>
+    
+
+    
 
 
-<div class="container" id="toc-content">
-<div class="row">
 
-	
-	<div class="col-md-8">
-	
-		<div id="main">
-			
 
-	<h1 class="page-title">Global</h1>
 <section>
 
 <header>
@@ -75,21 +47,15 @@
     
 </header>
 
-
 <article>
     <div class="container-overview">
     
         
 
         
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -99,25 +65,29 @@
 
     
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
+    
 
+    
 
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
@@ -131,7 +101,7 @@
 
     
 
-    
+     
 
     
 
@@ -140,32 +110,33 @@
     
         <h3 class="subsection-title">Methods</h3>
 
-        <dl>
-            
-<hr>
-<dt>
-    <h4 class="name" id="addClass"><span class="type-signature"></span>addClass(element, value)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>为指定元素增加 class 值</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-        <h5>Parameters:</h5>
         
+            
 
-<table class="params table table-striped">
+    
+
+    <h4 class="name" id="addClass"><span class="type-signature"></span>addClass<span class="signature">(element, value)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    为指定元素增加 class 值
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -196,7 +167,6 @@
 <span class="param-type">Object</span>
 
 
-
             
             </td>
 
@@ -204,7 +174,7 @@
 
             
 
-            <td class="description last"><p>指定元素对象</p></td>
+            <td class="description last">指定元素对象</td>
         </tr>
 
     
@@ -220,7 +190,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -228,24 +197,19 @@
 
             
 
-            <td class="description last"><p>class值</p></td>
+            <td class="description last">class值</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -255,86 +219,85 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-88">line 88</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line88">line 88</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="addLoadEvent"><span class="type-signature"></span>addLoadEvent(func)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>将函数绑定到 onload 事件上</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="addLoadEvent"><span class="type-signature"></span>addLoadEvent<span class="signature">(func)</span><span class="type-signature"></span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    将函数绑定到 onload 事件上
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -365,7 +328,6 @@
 <span class="param-type">function</span>
 
 
-
             
             </td>
 
@@ -373,24 +335,19 @@
 
             
 
-            <td class="description last"><p>需绑定的函数</p></td>
+            <td class="description last">需绑定的函数</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -400,86 +357,85 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-340">line 340</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line340">line 340</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="cloneObject"><span class="type-signature"></span>cloneObject(src)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>深度复制对象，即产生一个新的对象而不是只复制引用，不复制函数</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="cloneObject"><span class="type-signature"></span>cloneObject<span class="signature">(src)</span><span class="type-signature"> &rarr; {Object}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    深度复制对象，即产生一个新的对象而不是只复制引用，不复制函数
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -510,7 +466,6 @@
 <span class="param-type">Object</span>
 
 
-
             
             </td>
 
@@ -518,24 +473,19 @@
 
             
 
-            <td class="description last"><p>任何被复制的对象</p></td>
+            <td class="description last">任何被复制的对象</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -545,66 +495,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-221">line 221</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line221">line 221</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>result 产生的新对象</p>
+    result 产生的新对象
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -613,42 +562,40 @@
 <span class="param-type">Object</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="eachArr"><span class="type-signature"></span>eachArr(arr, fn)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>遍历数组，对其中每个元素执行 fn 函数</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="eachArr"><span class="type-signature"></span>eachArr<span class="signature">(arr, fn)</span><span class="type-signature"></span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    遍历数组，对其中每个元素执行 fn 函数
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -679,7 +626,6 @@
 <span class="param-type">Array</span>
 
 
-
             
             </td>
 
@@ -687,7 +633,7 @@
 
             
 
-            <td class="description last"><p>被遍历的数组</p></td>
+            <td class="description last">被遍历的数组</td>
         </tr>
 
     
@@ -703,7 +649,6 @@
 <span class="param-type">function</span>
 
 
-
             
             </td>
 
@@ -711,24 +656,19 @@
 
             
 
-            <td class="description last"><p>执行函数，可以接收两个参数，arr[i] 与索引 i</p></td>
+            <td class="description last">执行函数，可以接收两个参数，arr[i] 与索引 i</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -738,86 +678,85 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-291">line 291</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line291">line 291</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="get"><span class="type-signature"></span>get(url, options)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>以 get 方式发送请求</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(url, options)</span><span class="type-signature"></span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    以 get 方式发送请求
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -848,7 +787,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -856,7 +794,7 @@
 
             
 
-            <td class="description last"><p>请求链接</p></td>
+            <td class="description last">请求链接</td>
         </tr>
 
     
@@ -872,7 +810,6 @@
 <span class="param-type">Object</span>
 
 
-
             
             </td>
 
@@ -880,24 +817,23 @@
 
             
 
-            <td class="description last"><p>配置项<br>配置项内容：<br>{boolean} async true异步方式，false 同步方式<br>{function} succ 请求成功后的回调函数<br>{function} fail 请求失败后的回调函数</p></td>
+            <td class="description last">配置项
+配置项内容：
+{boolean} async true异步方式，false 同步方式
+{function} succ 请求成功后的回调函数
+{function} fail 请求失败后的回调函数</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -907,86 +843,85 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-561">line 561</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line561">line 561</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="getMaxOfArr"><span class="type-signature"></span>getMaxOfArr(arr)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>得到元素都为数值型的数组最大值</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="getMaxOfArr"><span class="type-signature"></span>getMaxOfArr<span class="signature">(arr)</span><span class="type-signature"> &rarr; {number}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    得到元素都为数值型的数组最大值
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -1017,7 +952,6 @@
 <span class="param-type">Array</span>
 
 
-
             
             </td>
 
@@ -1025,24 +959,19 @@
 
             
 
-            <td class="description last"><p>被判断数组</p></td>
+            <td class="description last">被判断数组</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -1052,66 +981,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-365">line 365</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line365">line 365</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>最大值</p>
+    最大值
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -1120,42 +1048,40 @@
 <span class="param-type">number</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="getMinOfArr"><span class="type-signature"></span>getMinOfArr(arr)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>得到元素都为数值型的数组最小值</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="getMinOfArr"><span class="type-signature"></span>getMinOfArr<span class="signature">(arr)</span><span class="type-signature"> &rarr; {number}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    得到元素都为数值型的数组最小值
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -1186,7 +1112,6 @@
 <span class="param-type">Array</span>
 
 
-
             
             </td>
 
@@ -1194,24 +1119,19 @@
 
             
 
-            <td class="description last"><p>被判断数组</p></td>
+            <td class="description last">被判断数组</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -1221,66 +1141,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-380">line 380</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line380">line 380</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>最小值</p>
+    最小值
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -1289,42 +1208,40 @@
 <span class="param-type">number</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="getNextElement"><span class="type-signature"></span>getNextElement(node)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>得到指定元素节点的下一个节点</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="getNextElement"><span class="type-signature"></span>getNextElement<span class="signature">(node)</span><span class="type-signature"> &rarr; {Object}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    得到指定元素节点的下一个节点
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -1355,7 +1272,6 @@
 <span class="param-type">Object</span>
 
 
-
             
             </td>
 
@@ -1363,24 +1279,19 @@
 
             
 
-            <td class="description last"><p>指定节点</p></td>
+            <td class="description last">指定节点</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -1390,66 +1301,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-70">line 70</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line70">line 70</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>下一个节点，若指定节点为最后一个，则返回null</p>
+    下一个节点，若指定节点为最后一个，则返回null
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -1458,42 +1368,40 @@
 <span class="param-type">Object</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="getObjectLength"><span class="type-signature"></span>getObjectLength(obj)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>获取对象里面第一层元素的数量</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="getObjectLength"><span class="type-signature"></span>getObjectLength<span class="signature">(obj)</span><span class="type-signature"> &rarr; {number}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    获取对象里面第一层元素的数量
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -1524,7 +1432,6 @@
 <span class="param-type">Object</span>
 
 
-
             
             </td>
 
@@ -1532,24 +1439,19 @@
 
             
 
-            <td class="description last"><p>被获取对象</p></td>
+            <td class="description last">被获取对象</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -1559,66 +1461,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-318">line 318</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line318">line 318</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>数量值，整数</p>
+    数量值，整数
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -1627,42 +1528,40 @@
 <span class="param-type">number</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="getRandomNum"><span class="type-signature"></span>getRandomNum(lower, upper)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>随机生成一个范围内的数值</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="getRandomNum"><span class="type-signature"></span>getRandomNum<span class="signature">(lower, upper)</span><span class="type-signature"> &rarr; {number}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    随机生成一个范围内的数值
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -1693,7 +1592,6 @@
 <span class="param-type">number</span>
 
 
-
             
             </td>
 
@@ -1701,7 +1599,7 @@
 
             
 
-            <td class="description last"><p>最小取值</p></td>
+            <td class="description last">最小取值</td>
         </tr>
 
     
@@ -1717,7 +1615,6 @@
 <span class="param-type">number</span>
 
 
-
             
             </td>
 
@@ -1725,24 +1622,19 @@
 
             
 
-            <td class="description last"><p>最大取值</p></td>
+            <td class="description last">最大取值</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -1752,66 +1644,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-395">line 395</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line395">line 395</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>lower 到 upper 之间的一个随机数</p>
+    lower 到 upper 之间的一个随机数
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -1820,42 +1711,40 @@
 <span class="param-type">number</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="insertAfter"><span class="type-signature"></span>insertAfter(newElement, targetElement)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>将新元素插入目标元素前面</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="insertAfter"><span class="type-signature"></span>insertAfter<span class="signature">(newElement, targetElement)</span><span class="type-signature"></span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    将新元素插入目标元素前面
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -1886,7 +1775,6 @@
 <span class="param-type">Object</span>
 
 
-
             
             </td>
 
@@ -1894,7 +1782,7 @@
 
             
 
-            <td class="description last"><p>需要插入的新元素</p></td>
+            <td class="description last">需要插入的新元素</td>
         </tr>
 
     
@@ -1910,7 +1798,6 @@
 <span class="param-type">Object</span>
 
 
-
             
             </td>
 
@@ -1918,24 +1805,19 @@
 
             
 
-            <td class="description last"><p>目标元素</p></td>
+            <td class="description last">目标元素</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -1945,86 +1827,85 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-52">line 52</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line52">line 52</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isArray"><span class="type-signature"></span>isArray(arr)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>是否是数组类型</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isArray"><span class="type-signature"></span>isArray<span class="signature">(arr)</span><span class="type-signature"></span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    是否是数组类型
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -2055,7 +1936,6 @@
 <span class="param-type">Array</span>
 
 
-
             
             </td>
 
@@ -2063,24 +1943,19 @@
 
             
 
-            <td class="description last"><p>判断数组</p></td>
+            <td class="description last">判断数组</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -2090,86 +1965,85 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-139">line 139</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line139">line 139</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isBoolean"><span class="type-signature"></span>isBoolean(bol)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>是否是布尔类型</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isBoolean"><span class="type-signature"></span>isBoolean<span class="signature">(bol)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    是否是布尔类型
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -2200,7 +2074,6 @@
 <span class="param-type">boolean</span>
 
 
-
             
             </td>
 
@@ -2208,24 +2081,19 @@
 
             
 
-            <td class="description last"><p>被判断布尔</p></td>
+            <td class="description last">被判断布尔</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -2235,66 +2103,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-201">line 201</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line201">line 201</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true 是布尔类型</p>
+    true 是布尔类型
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -2303,42 +2170,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isDate"><span class="type-signature"></span>isDate(date)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>是否是日期类型</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isDate"><span class="type-signature"></span>isDate<span class="signature">(date)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    是否是日期类型
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -2369,7 +2234,6 @@
 <span class="param-type">Date</span>
 
 
-
             
             </td>
 
@@ -2377,24 +2241,19 @@
 
             
 
-            <td class="description last"><p>被判断日期</p></td>
+            <td class="description last">被判断日期</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -2404,66 +2263,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-161">line 161</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line161">line 161</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true 是日期类型</p>
+    true 是日期类型
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -2472,42 +2330,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isEmail"><span class="type-signature"></span>isEmail(email)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>验证邮箱地址</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isEmail"><span class="type-signature"></span>isEmail<span class="signature">(email)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    验证邮箱地址
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -2538,7 +2394,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -2546,24 +2401,19 @@
 
             
 
-            <td class="description last"><p>邮箱字符串</p></td>
+            <td class="description last">邮箱字符串</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -2573,66 +2423,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-412">line 412</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line412">line 412</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true 是正确格式的邮箱地址</p>
+    true 是正确格式的邮箱地址
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -2641,42 +2490,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isFunction"><span class="type-signature"></span>isFunction(fn)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>是否是函数类型</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isFunction"><span class="type-signature"></span>isFunction<span class="signature">(fn)</span><span class="type-signature"></span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    是否是函数类型
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -2707,7 +2554,6 @@
 <span class="param-type">function</span>
 
 
-
             
             </td>
 
@@ -2715,24 +2561,19 @@
 
             
 
-            <td class="description last"><p>被判断函数</p></td>
+            <td class="description last">被判断函数</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -2742,86 +2583,85 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-151">line 151</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line151">line 151</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isIDCard"><span class="type-signature"></span>isIDCard(idCode)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>验证身份证号码，15 位或 18 位</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isIDCard"><span class="type-signature"></span>isIDCard<span class="signature">(idCode)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    验证身份证号码，15 位或 18 位
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -2852,7 +2692,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -2860,24 +2699,19 @@
 
             
 
-            <td class="description last"><p>被验证身份证号码</p></td>
+            <td class="description last">被验证身份证号码</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -2887,66 +2721,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-540">line 540</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line540">line 540</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true 符合验证条件</p>
+    true 符合验证条件
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -2955,42 +2788,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isIP"><span class="type-signature"></span>isIP(ip)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>验证 IP 地址，必须为标准 255 内的数值</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isIP"><span class="type-signature"></span>isIP<span class="signature">(ip)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    验证 IP 地址，必须为标准 255 内的数值
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -3021,7 +2852,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -3029,24 +2859,19 @@
 
             
 
-            <td class="description last"><p>被验证 IP 地址</p></td>
+            <td class="description last">被验证 IP 地址</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -3056,66 +2881,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-525">line 525</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line525">line 525</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true 符合验证条件</p>
+    true 符合验证条件
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -3124,42 +2948,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isMobile"><span class="type-signature"></span>isMobile(mobNum)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>验证中国大陆手机号码，可选格式+86-xxxxxxxxxxx+86xxxxxxxxxxx+86 xxxxxxxxxxx\xxxxxxxxxxx，号码须以运营商号段开头</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isMobile"><span class="type-signature"></span>isMobile<span class="signature">(mobNum)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    验证中国大陆手机号码，可选格式+86-xxxxxxxxxxx\+86xxxxxxxxxxx\+86 xxxxxxxxxxx\xxxxxxxxxxx，号码须以运营商号段开头
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -3190,7 +3012,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -3198,24 +3019,19 @@
 
             
 
-            <td class="description last"><p>被验证手机号</p></td>
+            <td class="description last">被验证手机号</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -3225,66 +3041,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-510">line 510</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line510">line 510</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true 符合验证条件</p>
+    true 符合验证条件
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -3293,42 +3108,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isNumber"><span class="type-signature"></span>isNumber(num)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>是否是数值类型</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isNumber"><span class="type-signature"></span>isNumber<span class="signature">(num)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    是否是数值类型
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -3359,7 +3172,6 @@
 <span class="param-type">number</span>
 
 
-
             
             </td>
 
@@ -3367,24 +3179,19 @@
 
             
 
-            <td class="description last"><p>被判断数值</p></td>
+            <td class="description last">被判断数值</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -3394,66 +3201,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-191">line 191</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line191">line 191</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true 是数值类型</p>
+    true 是数值类型
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -3462,42 +3268,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isNumLength"><span class="type-signature"></span>isNumLength(numStr, lowwer, upper)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>验证是否全是数值，且在一个指定的长度范围内</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isNumLength"><span class="type-signature"></span>isNumLength<span class="signature">(numStr, lowwer, upper)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    验证是否全是数值，且在一个指定的长度范围内
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -3528,7 +3332,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -3536,7 +3339,7 @@
 
             
 
-            <td class="description last"><p>被判断的数值字符串</p></td>
+            <td class="description last">被判断的数值字符串</td>
         </tr>
 
     
@@ -3552,7 +3355,6 @@
 <span class="param-type">number</span>
 
 
-
             
             </td>
 
@@ -3560,7 +3362,7 @@
 
             
 
-            <td class="description last"><p>指定的最小长度</p></td>
+            <td class="description last">指定的最小长度</td>
         </tr>
 
     
@@ -3576,7 +3378,6 @@
 <span class="param-type">number</span>
 
 
-
             
             </td>
 
@@ -3584,24 +3385,19 @@
 
             
 
-            <td class="description last"><p>指定的最大长度</p></td>
+            <td class="description last">指定的最大长度</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -3611,66 +3407,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-427">line 427</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line427">line 427</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true 该字符串全是数值，且在指定长度范围内</p>
+    true 该字符串全是数值，且在指定长度范围内
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -3679,42 +3474,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isObject"><span class="type-signature"></span>isObject(obj)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>是否是对象</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isObject"><span class="type-signature"></span>isObject<span class="signature">(obj)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    是否是对象
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -3745,7 +3538,6 @@
 <span class="param-type">Object</span>
 
 
-
             
             </td>
 
@@ -3753,24 +3545,19 @@
 
             
 
-            <td class="description last"><p>被判断对象</p></td>
+            <td class="description last">被判断对象</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -3780,66 +3567,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-211">line 211</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line211">line 211</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true 是对象</p>
+    true 是对象
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -3848,42 +3634,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isPasswd"><span class="type-signature"></span>isPasswd(passwd, lowwer, upper)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>验证密码，仅能包含英文字符、数值、&quot;_-@&quot;三种字符，并在指定长度范围内</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isPasswd"><span class="type-signature"></span>isPasswd<span class="signature">(passwd, lowwer, upper)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    验证密码，仅能包含英文字符、数值、"_-@"三种字符，并在指定长度范围内
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -3914,7 +3698,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -3922,7 +3705,7 @@
 
             
 
-            <td class="description last"><p>被判断的密码</p></td>
+            <td class="description last">被判断的密码</td>
         </tr>
 
     
@@ -3938,7 +3721,6 @@
 <span class="param-type">number</span>
 
 
-
             
             </td>
 
@@ -3946,7 +3728,7 @@
 
             
 
-            <td class="description last"><p>最小指定长度</p></td>
+            <td class="description last">最小指定长度</td>
         </tr>
 
     
@@ -3962,7 +3744,6 @@
 <span class="param-type">number</span>
 
 
-
             
             </td>
 
@@ -3970,24 +3751,19 @@
 
             
 
-            <td class="description last"><p>最大指定长度</p></td>
+            <td class="description last">最大指定长度</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -3997,66 +3773,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-478">line 478</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line478">line 478</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true 符合验证条件</p>
+    true 符合验证条件
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -4065,42 +3840,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isRegExp"><span class="type-signature"></span>isRegExp(reg)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>是否是正则表达式类型</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isRegExp"><span class="type-signature"></span>isRegExp<span class="signature">(reg)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    是否是正则表达式类型
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -4131,7 +3904,6 @@
 <span class="param-type">RegExp</span>
 
 
-
             
             </td>
 
@@ -4139,24 +3911,19 @@
 
             
 
-            <td class="description last"><p>被判断正则表达式</p></td>
+            <td class="description last">被判断正则表达式</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -4166,66 +3933,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-171">line 171</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line171">line 171</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true 是正则表达式类型</p>
+    true 是正则表达式类型
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -4234,42 +4000,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isRegisterName"><span class="type-signature"></span>isRegisterName(regStr, lowwer, upper)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>验证登录名，仅以英文字符或 <em> 开头，包含英文字符、数字及&quot;-</em>&quot; 两种字符，并且在指定的长度范围内</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isRegisterName"><span class="type-signature"></span>isRegisterName<span class="signature">(regStr, lowwer, upper)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    验证登录名，仅以英文字符或 _ 开头，包含英文字符、数字及"-_" 两种字符，并且在指定的长度范围内
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -4300,7 +4064,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -4308,7 +4071,7 @@
 
             
 
-            <td class="description last"><p>被验证的字符串</p></td>
+            <td class="description last">被验证的字符串</td>
         </tr>
 
     
@@ -4324,7 +4087,6 @@
 <span class="param-type">number</span>
 
 
-
             
             </td>
 
@@ -4332,7 +4094,7 @@
 
             
 
-            <td class="description last"><p>最小指定长度</p></td>
+            <td class="description last">最小指定长度</td>
         </tr>
 
     
@@ -4348,7 +4110,6 @@
 <span class="param-type">number</span>
 
 
-
             
             </td>
 
@@ -4356,24 +4117,19 @@
 
             
 
-            <td class="description last"><p>最大指定长度</p></td>
+            <td class="description last">最大指定长度</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -4383,66 +4139,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-444">line 444</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line444">line 444</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true  字符串符合验证条件</p>
+    true  字符串符合验证条件
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -4451,42 +4206,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isString"><span class="type-signature"></span>isString(str)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>是否是字符串类型</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isString"><span class="type-signature"></span>isString<span class="signature">(str)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    是否是字符串类型
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -4517,7 +4270,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -4525,24 +4277,19 @@
 
             
 
-            <td class="description last"><p>被判断字符串</p></td>
+            <td class="description last">被判断字符串</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -4552,66 +4299,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-181">line 181</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line181">line 181</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true 是字符串类型</p>
+    true 是字符串类型
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -4620,42 +4366,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isTel"><span class="type-signature"></span>isTel(tel)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>验证中国大陆电话号码或传真，匹配 0xx-xxxxxxx、(0xx)xxxxxxxx、0xx xxxxxxx 等各种形式</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isTel"><span class="type-signature"></span>isTel<span class="signature">(tel)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    验证中国大陆电话号码或传真，匹配 0xx-xxxxxxx、(0xx)xxxxxxxx、0xx xxxxxxx 等各种形式
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -4686,7 +4430,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -4694,24 +4437,19 @@
 
             
 
-            <td class="description last"><p>被验证电话</p></td>
+            <td class="description last">被验证电话</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -4721,66 +4459,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-495">line 495</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line495">line 495</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true 符合验证条件</p>
+    true 符合验证条件
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -4789,42 +4526,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="isTrueName"><span class="type-signature"></span>isTrueName(name, lowwer, upper)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>验证用户姓名，仅能包含英文字符、中文字符、空格或者“·”，且在指定长度范围内</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="isTrueName"><span class="type-signature"></span>isTrueName<span class="signature">(name, lowwer, upper)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    验证用户姓名，仅能包含英文字符、中文字符、空格或者“·”，且在指定长度范围内
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -4855,7 +4590,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -4863,7 +4597,7 @@
 
             
 
-            <td class="description last"><p>被判断的字符</p></td>
+            <td class="description last">被判断的字符</td>
         </tr>
 
     
@@ -4879,7 +4613,6 @@
 <span class="param-type">number</span>
 
 
-
             
             </td>
 
@@ -4887,7 +4620,7 @@
 
             
 
-            <td class="description last"><p>最小指定长度</p></td>
+            <td class="description last">最小指定长度</td>
         </tr>
 
     
@@ -4903,7 +4636,6 @@
 <span class="param-type">number</span>
 
 
-
             
             </td>
 
@@ -4911,24 +4643,19 @@
 
             
 
-            <td class="description last"><p>最大指定长度</p></td>
+            <td class="description last">最大指定长度</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -4938,66 +4665,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-461">line 461</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line461">line 461</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>true 符合验证条件</p>
+    true 符合验证条件
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -5006,42 +4732,40 @@
 <span class="param-type">Boolean</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="load"><span class="type-signature"></span>load(url, options)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>以 get 方式读取数据</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="load"><span class="type-signature"></span>load<span class="signature">(url, options)</span><span class="type-signature"></span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    以 get 方式读取数据
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -5072,7 +4796,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -5080,7 +4803,7 @@
 
             
 
-            <td class="description last"><p>请求链接</p></td>
+            <td class="description last">请求链接</td>
         </tr>
 
     
@@ -5096,7 +4819,6 @@
 <span class="param-type">Object</span>
 
 
-
             
             </td>
 
@@ -5104,24 +4826,23 @@
 
             
 
-            <td class="description last"><p>配置项<br>配置项内容：<br>{boolean} async true异步方式，false 同步方式<br>{function} succ 请求成功后的回调函数<br>{function} fail 请求失败后的回调函数</p></td>
+            <td class="description last">配置项
+配置项内容：
+{boolean} async true异步方式，false 同步方式
+{function} succ 请求成功后的回调函数
+{function} fail 请求失败后的回调函数</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -5131,86 +4852,86 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-575">line 575</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line575">line 575</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="loadScript"><span class="type-signature"></span>loadScript(url, callback)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>动态加载 JavaScript 文件，生成 DOM - <script type="text/javascript" src=url></script><br> 注意：不保证文件加载顺序，需要顺序请嵌套加载</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="loadScript"><span class="type-signature"></span>loadScript<span class="signature">(url, callback)</span><span class="type-signature"></span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    动态加载 JavaScript 文件，生成 DOM - <script type="text/javascript" src=url></script>
+ 注意：不保证文件加载顺序，需要顺序请嵌套加载
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -5241,7 +4962,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -5249,7 +4969,7 @@
 
             
 
-            <td class="description last"><p>JavaScript 文件路径</p></td>
+            <td class="description last">JavaScript 文件路径</td>
         </tr>
 
     
@@ -5265,7 +4985,6 @@
 <span class="param-type">function</span>
 
 
-
             
             </td>
 
@@ -5273,24 +4992,19 @@
 
             
 
-            <td class="description last"><p>加载完成的回调方法</p></td>
+            <td class="description last">加载完成的回调方法</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -5300,86 +5014,85 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-107">line 107</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line107">line 107</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="post"><span class="type-signature"></span>post(url, options)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>以 post 方式发送请求</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="post"><span class="type-signature"></span>post<span class="signature">(url, options)</span><span class="type-signature"></span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    以 post 方式发送请求
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -5410,7 +5123,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -5418,7 +5130,7 @@
 
             
 
-            <td class="description last"><p>请求链接</p></td>
+            <td class="description last">请求链接</td>
         </tr>
 
     
@@ -5434,7 +5146,6 @@
 <span class="param-type">Object</span>
 
 
-
             
             </td>
 
@@ -5442,24 +5153,24 @@
 
             
 
-            <td class="description last"><p>配置项<br>配置项内容：<br>{Object} data 请求参数<br>{boolean} async true异步方式，false 同步方式<br>{function} succ 请求成功后的回调函数<br>{function} fail 请求失败后的回调函数</p></td>
+            <td class="description last">配置项
+配置项内容：
+{Object} data 请求参数
+{boolean} async true异步方式，false 同步方式
+{function} succ 请求成功后的回调函数
+{function} fail 请求失败后的回调函数</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -5469,86 +5180,85 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-589">line 589</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line589">line 589</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-</dd>
+
+
+
+
+
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="stringTrim"><span class="type-signature"></span>stringTrim(str)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>去除字符串两端的多余空格或 tab</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="stringTrim"><span class="type-signature"></span>stringTrim<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    去除字符串两端的多余空格或 tab
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -5579,7 +5289,6 @@
 <span class="param-type">string</span>
 
 
-
             
             </td>
 
@@ -5587,24 +5296,19 @@
 
             
 
-            <td class="description last"><p>被去除空格或 tab 的字符串</p></td>
+            <td class="description last">被去除空格或 tab 的字符串</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -5614,66 +5318,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-306">line 306</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line306">line 306</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>处理完毕的字符串</p>
+    处理完毕的字符串
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -5682,42 +5385,40 @@
 <span class="param-type">string</span>
 
 
-
     </dd>
 </dl>
 
-
-        
-
     
-</dd>
+
+
 
         
             
-<hr>
-<dt>
-    <h4 class="name" id="uniqArray"><span class="type-signature"></span>uniqArray(arr)</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>对数组进行去重操作</p>
-    </div>
-    
 
     
 
-    
+    <h4 class="name" id="uniqArray"><span class="type-signature"></span>uniqArray<span class="signature">(arr)</span><span class="type-signature"> &rarr; {Array}</span></h4>
 
     
-    
-        <h5>Parameters:</h5>
-        
 
-<table class="params table table-striped">
+
+
+<div class="description">
+    对数组进行去重操作
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
     <thead>
     <tr>
         
@@ -5748,7 +5449,6 @@
 <span class="param-type">Array</span>
 
 
-
             
             </td>
 
@@ -5756,24 +5456,19 @@
 
             
 
-            <td class="description last"><p>被去重的字符串</p></td>
+            <td class="description last">被去重的字符串</td>
         </tr>
 
     
     </tbody>
 </table>
 
-    
 
-    
+
+
+
+
 <dl class="details">
-    
-
-	
-
-	
-
-	
 
     
 
@@ -5783,66 +5478,65 @@
 
     
 
-	
+    
 
-	
-	<dt class="tag-author method-doc-label method-doc-details-label">Author:</dt>
-	<dd class="tag-author">
-		<ul>
-			<li>honoka</li>
-			</ul>
-	</dd>
-	
+    
 
-	
+    
 
-	
+    
 
-	
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>honoka</li>
+        </ul>
+    </dd>
+    
 
+    
 
+    
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="honokajs.js.html">honokajs.js</a>,
-				 <a href="honokajs.js.html#sunlight-1-line-267">line 267</a>
-			</li>
-		</ul>
-	</dd>
-	
+    
 
-	
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="honokajs.js.html">honokajs.js</a>, <a href="honokajs.js.html#line267">line 267</a>
+    </li></ul></dd>
+    
 
-	
+    
 
-	
+    
+
+    
 </dl>
 
 
-    
 
-    
 
-    
 
-    
 
-    
 
-    
-    <h5>Returns:</h5>
-    
-            
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
 <div class="param-desc">
-    <p>去重完毕的字符串</p>
+    去重完毕的字符串
 </div>
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -5851,17 +5545,14 @@
 <span class="param-type">Array</span>
 
 
-
     </dd>
 </dl>
 
+    
+
+
 
         
-
-    
-</dd>
-
-        </dl>
     
 
     
@@ -5874,131 +5565,15 @@
 
 
 
-		</div>
-	</div>
-
-	<div class="clearfix"></div>
-
-	
-		<div class="col-md-3">
-			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
-		</div>
-	
-
-</div>
 </div>
 
-<div class="modal fade" id="searchResults">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Search results</h4>
-      </div>
-      <div class="modal-body"></div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div>
+<br class="clear">
 
 <footer>
-
-
-	<span class="copyright">
-	DocStrap Copyright © 2012-2015 The contributors to the JSDoc3 and DocStrap projects.
-	</span>
-
-<span class="jsdoc-message">
-	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
-	
-		on Fri Mar 4th 2016
-	
-	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
-</span>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Fri Mar 04 2016 00:40:48 GMT+0800 (CST) using the Minami theme.
 </footer>
 
-<script src="scripts/docstrap.lib.js"></script>
-<script src="scripts/toc.js"></script>
-<script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
-
-<script>
-$( function () {
-	$( "[id*='$']" ).each( function () {
-		var $this = $( this );
-
-		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
-	} );
-
-	$( ".tutorial-section pre, .readme-section pre" ).each( function () {
-		var $this = $( this );
-
-		var example = $this.find( "code" );
-		exampleText = example.html();
-		var lang = /{@lang (.*?)}/.exec( exampleText );
-		if ( lang && lang[1] ) {
-			exampleText = exampleText.replace( lang[0], "" );
-			example.html( exampleText );
-			lang = lang[1];
-		} else {
-			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
-			lang = langClassMatch ? langClassMatch[1] : "javascript";
-		}
-
-		if ( lang ) {
-
-			$this
-			.addClass( "sunlight-highlight-" + lang )
-			.addClass( "linenums" )
-			.html( example.html() );
-
-		}
-	} );
-
-	Sunlight.highlightAll( {
-		lineNumbers : true,
-		showMenu : true,
-		enableDoclinks : true
-	} );
-
-	$.catchAnchorLinks( {
-        navbarOffset: 10
-	} );
-	$( "#toc" ).toc( {
-		anchorName  : function ( i, heading, prefix ) {
-			var id = $( heading ).attr( "id" );
-			return id && id.replace(/\~/g, '-inner-').replace(/\./g, '-static-') || ( prefix + i );
-		},
-		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
-		showAndHide : false,
-		smoothScrolling: true
-	} );
-
-	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
-	$( '.dropdown-toggle' ).dropdown();
-
-    $( "table" ).each( function () {
-      var $this = $( this );
-      $this.addClass('table');
-    } );
-
-} );
-</script>
-
-
-
-<!--Navigation and Symbol Display-->
-
-
-<!--Google Analytics-->
-
-
-<script type="text/javascript">
-	$(document).ready(function() {
-		SearcherDisplay.init();
-	});
-</script>
-
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
 </body>
 </html>
