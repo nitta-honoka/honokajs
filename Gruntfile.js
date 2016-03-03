@@ -24,34 +24,30 @@ module.exports = function (grunt) {
             }
         },
         jasmine: {
-			coverage: {
-				src: 'dist/honokajs.js',
-				options: {
-					specs: 'test/*.js',
-					template: require('grunt-template-jasmine-istanbul'),
-					templateOptions: {
-						coverage: 'coverage/coverage.json',
-						report: [
-							{
-								type: 'html',
-								options: {
-									dir: 'coverage/html'
-								}
-							},
-							{
-								type: 'cobertura',
-								options: {
-									dir: 'coverage/cobertura'
-								}
-							},
-							{
-								type: 'text-summary'
-							}
-						]
-					}
-				}
-			}
-		},
+            coverage: {
+                src: 'dist/honokajs.js',
+                options: {
+                    specs: 'test/*.js',
+                    template: require('grunt-template-jasmine-istanbul'),
+                    templateOptions: {
+                        coverage: 'coverage/coverage.json',
+                        report: [{
+                            type: 'html',
+                            options: {
+                                dir: 'coverage/html'
+                            }
+                        }, {
+                            type: 'cobertura',
+                            options: {
+                                dir: 'coverage/cobertura'
+                            }
+                        }, {
+                            type: 'text-summary'
+                        }]
+                    }
+                }
+            }
+        },
         uglify: {
             options: {
                 banner: '/*! <%= pkg.name.replace(".js", "") %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
@@ -91,7 +87,19 @@ module.exports = function (grunt) {
             bower: {
                 command: "bower register honokajs https://github.com/nitta-honoka/honokajs.git"
             }
+        },
+
+        jsdoc: {
+            dist: {
+                src: ['dist/*.js', 'test/*.js'],
+                options: {
+                    destination: 'doc',
+                    template: "node_modules/ink-docstrap/template",
+                    configure: "node_modules/ink-docstrap/template/jsdoc.conf.json"
+                }
+            }
         }
+
 
     });
 
@@ -102,8 +110,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
     grunt.loadNpmTasks('grunt-shell');
+    grunt.loadNpmTasks('grunt-jsdoc');
     // grunt.registerTask('test', ['jshint', 'qunit']);
     grunt.registerTask('test', ['jasmine:coverage']);
+    grunt.registerTask('doc', ['jsdoc']);
     grunt.registerTask('pub', ['shell:npm', 'shell:bower']);
     grunt.registerTask('default', ['concat', 'jasmine:coverage', 'uglify']);
 

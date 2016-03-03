@@ -2,10 +2,11 @@
  * Created by honoka on 16/2/27.
  * 事件辅助类
  */
-
 /**
  * 将函数绑定到 onload 事件上
+ * @method addLoadEvent
  * @param {function} func 需绑定的函数
+ * @author honoka
  */
 Ho.prototype.addLoadEvent = function (func) {
     //把现有的 window.onload 事件处理函数的值存入变量

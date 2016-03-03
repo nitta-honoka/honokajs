@@ -2,7 +2,7 @@
 ![Travis](https://travis-ci.org/nitta-honoka/honokajs.svg?branch=master)
 # honokajs
 
-A light library of common JavaScript functions 
+A light library of common JavaScript functions
 
 ## About
 
@@ -26,13 +26,11 @@ Or grab the [source](https://github.com/nitta-honoka/honokajs/dist/honokajs.js) 
 
 Basic usage is as follows:
 
-    honoka.function();
+    var ho = new Ho();
+    ho.function();
 
-Also support the AMD & CMD. For advanced usage, see the documentation.
+Also support the CommonJS & AMD & CMD. For advanced usage, see the [documentation](http://nitta-honoka.github.io/honokajs).
 
-## Documentation
-
-Start with `docs/MAIN.md`.
 
 ## Contributing
 

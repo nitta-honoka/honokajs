@@ -1,13 +1,17 @@
 {
   "name": "honokajs",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "dist/honokajs.min.js",
   "authors": [
     "(Aolin.Xu <xal2008sc@gmail.com>)"
   ],
   "description": "A light library of common JavaScript functions",
   "keywords": [
-    "ajax",
+    "Regular expressions",
+    "Math support",
+    "dom support",
+    "verify support",
+    "UMD support",
     "JavaScript Library"
   ],
   "license": "MIT",

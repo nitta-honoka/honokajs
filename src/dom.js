@@ -2,11 +2,12 @@
  * Created by honoka on 16/2/27.
  * Dom操作辅助类
  */
-
 /**
  * 将新元素插入目标元素前面
- * @param {Dom Object} newElement
- * @param {Dom Object} targetElement
+ * @method insertAfter
+ * @param {Object} newElement 需要插入的新元素
+ * @param {Object} targetElement 目标元素
+ * @author honoka
  */
 Ho.prototype.insertAfter = function (newElement, targetElement) {
     //将目标元素的 parentNode 值（即父节点）保存到变量中
@@ -21,8 +22,10 @@ Ho.prototype.insertAfter = function (newElement, targetElement) {
 };
 /**
  * 得到指定元素节点的下一个节点
- * @param node 指定节点
- * @returns
+ * @method getNextElement
+ * @param {Object} node 指定节点
+ * @return {Object} 下一个节点，若指定节点为最后一个，则返回null
+ * @author honoka
  */
 Ho.prototype.getNextElement = function (node) {
     if (node.nodeName == 1) {
@@ -31,14 +34,16 @@ Ho.prototype.getNextElement = function (node) {
     }
     if (node.nextSibling) {
         //当元素节点下个节点存在时，递归寻找下一个元素节点
-        return getNextElement(node.nextSibling);
+        return this.getNextElement(node.nextSibling);
     }
     return null;
 };
 /**
  * 为指定元素增加 class 值
- * @param {Dom Object} element 指定元素对象
+ * @method addClass
+ * @param {Object} element 指定元素对象
  * @param {string} value class值
+ * @author honoka
  */
 Ho.prototype.addClass = function (element, value) {
     if (!element.className) {
@@ -55,8 +60,10 @@ Ho.prototype.addClass = function (element, value) {
 /**
  * 动态加载 JavaScript 文件，生成 DOM - <script type="text/javascript" src=url></script>
  *  注意：不保证文件加载顺序，需要顺序请嵌套加载
- * @param  {[string]}   url     JavaScript 文件路径
+ * @method loadScript
+ * @param  {string}   url     JavaScript 文件路径
  * @param  {Function} callback  加载完成的回调方法
+ * @author honoka
  */
 Ho.prototype.loadScript = function (url, callback) {
     var script = document.createElement("script");

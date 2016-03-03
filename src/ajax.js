@@ -4,30 +4,35 @@
  */
 /**
  * 以 get 方式发送请求
+ * @method get
  * @param {string} url  请求链接
  * @param {Object} options 配置项
  * 配置项内容：
  * {boolean} async true异步方式，false 同步方式
  * {function} succ 请求成功后的回调函数
  * {function} fail 请求失败后的回调函数
+ * @author honoka
  */
 Ho.prototype.get = function (url, options) {
     send(url, "GET", options);
 };
 /**
  * 以 get 方式读取数据
+ * @method load
  * @param {string} url  请求链接
  * @param {Object} options 配置项
  * 配置项内容：
  * {boolean} async true异步方式，false 同步方式
  * {function} succ 请求成功后的回调函数
  * {function} fail 请求失败后的回调函数
+ * @author honoka
  */
 Ho.prototype.load = function (url, options) {
     send(url, "GET", options);
 };
 /**
  * 以 post 方式发送请求
+ * @method post
  * @param {string} url  请求链接
  * @param {Object} options 配置项
  * 配置项内容：
@@ -35,6 +40,7 @@ Ho.prototype.load = function (url, options) {
  * {boolean} async true异步方式，false 同步方式
  * {function} succ 请求成功后的回调函数
  * {function} fail 请求失败后的回调函数
+ * @author honoka
  */
 Ho.prototype.post = function (url, options) {
     send(url, "POST", options);
@@ -63,11 +69,11 @@ function send(url, method, options) {
             if (request.readyState === 4 && (request.status === 200)) {
                 succCallback(request.responseText);
             } else if (request.status === 400 || request.status === 404 || request.status === 500) {
-                failCallback()
+                failCallback();
             }
         };
     }
-};
+}
 /**
  * 获得 XHR 对象
  * @returns {XMLHttpRequest} XHR 对象
@@ -78,4 +84,4 @@ function getAjaxObj() {
     } else { // code for IE6, IE5
         return new ActiveXObject("Microsoft.XMLHTTP");
     }
-};
+}

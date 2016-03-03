@@ -5,56 +5,56 @@
 /* honokajs main */
 
 //建立 root 对象，在浏览器环境中是 'window'
-        //在服务端环境中是 'global'
-        //或者在一些虚拟环境中是 this
-        //为了 'WebWorker' 的支持使用 'self' 替换 'window'
-        var root = typeof self == 'object' && self.self === self && self ||
-            typeof global == 'object' && global.global === global && global ||
-            this;
+//在服务端环境中是 'global'
+//或者在一些虚拟环境中是 this
+//为了 'WebWorker' 的支持使用 'self' 替换 'window'
+var root = typeof self == 'object' && self.self === self && self ||
+    typeof global == 'object' && global.global === global && global ||
+    this;
 
-        //构造函数
-        var Ho = function(obj) {
-            if (obj instanceof Ho) {
-                return obj;
-            }
-            if (!(this instanceof Ho)) {
-                return new Ho(obj);
-            }
-            this._wrapped = obj;
-        };
+//构造函数
+var Ho = function (obj) {
+    if (obj instanceof Ho) {
+        return obj;
+    }
+    if (!(this instanceof Ho)) {
+        return new Ho(obj);
+    }
+    this._wrapped = obj;
+};
 
-        //添加 CommonJS 语法支持
-        //如果在浏览器中，将 'Ho' 作为全局对象加入
-        //'nodeType' 用来确保 'module' 和 'exports' 不是一个 HTML 元素
-        if (typeof exports != 'undefined' && !exports.nodeType) {
-            if (typeof module != 'undefined' && !module.nodeType && module.exports) {
-                exports = module.exports = Ho;
-            }
-            exports.Ho = Ho;
-        } else {
-            root.Ho = Ho;
-        }
+//添加 CommonJS 语法支持
+//如果在浏览器中，将 'Ho' 作为全局对象加入
+//'nodeType' 用来确保 'module' 和 'exports' 不是一个 HTML 元素
+if (typeof exports != 'undefined' && !exports.nodeType) {
+    if (typeof module != 'undefined' && !module.nodeType && module.exports) {
+        exports = module.exports = Ho;
+    }
+    exports.Ho = Ho;
+} else {
+    root.Ho = Ho;
+}
 
 //添加 AMD 与 CMD 支持
 if (typeof define == 'function' && define.amd) {
-    define('honoka', [], function() {
-       return Ho;
+    define('honoka', [], function () {
+        return Ho;
     });
 }
 // Version.
 Ho.VERSION = '0.1.6';
 
 
-
 /**
  * Created by honoka on 16/2/27.
  * Dom操作辅助类
  */
-
 /**
  * 将新元素插入目标元素前面
- * @param {Dom Object} newElement
- * @param {Dom Object} targetElement
+ * @method insertAfter
+ * @param {Object} newElement 需要插入的新元素
+ * @param {Object} targetElement 目标元素
+ * @author honoka
  */
 Ho.prototype.insertAfter = function (newElement, targetElement) {
     //将目标元素的 parentNode 值（即父节点）保存到变量中
@@ -69,8 +69,10 @@ Ho.prototype.insertAfter = function (newElement, targetElement) {
 };
 /**
  * 得到指定元素节点的下一个节点
- * @param node 指定节点
- * @returns
+ * @method getNextElement
+ * @param {Object} node 指定节点
+ * @return {Object} 下一个节点，若指定节点为最后一个，则返回null
+ * @author honoka
  */
 Ho.prototype.getNextElement = function (node) {
     if (node.nodeName == 1) {
@@ -79,14 +81,16 @@ Ho.prototype.getNextElement = function (node) {
     }
     if (node.nextSibling) {
         //当元素节点下个节点存在时，递归寻找下一个元素节点
-        return getNextElement(node.nextSibling);
+        return this.getNextElement(node.nextSibling);
     }
     return null;
 };
 /**
  * 为指定元素增加 class 值
- * @param {Dom Object} element 指定元素对象
+ * @method addClass
+ * @param {Object} element 指定元素对象
  * @param {string} value class值
+ * @author honoka
  */
 Ho.prototype.addClass = function (element, value) {
     if (!element.className) {
@@ -103,8 +107,10 @@ Ho.prototype.addClass = function (element, value) {
 /**
  * 动态加载 JavaScript 文件，生成 DOM - <script type="text/javascript" src=url></script>
  *  注意：不保证文件加载顺序，需要顺序请嵌套加载
- * @param  {[string]}   url     JavaScript 文件路径
+ * @method loadScript
+ * @param  {string}   url     JavaScript 文件路径
  * @param  {Function} callback  加载完成的回调方法
+ * @author honoka
  */
 Ho.prototype.loadScript = function (url, callback) {
     var script = document.createElement("script");
@@ -132,8 +138,10 @@ Ho.prototype.loadScript = function (url, callback) {
  */
 /**
  * 是否是数组类型
+ * @method isArray
  * @param {Array} arr 判断数组
  * @retrun Boolean true 是数组类型
+ * @author honoka
  */
 Ho.prototype.isArray = function (arr) {
     //当页面存在多个全局作用域时，使用 instanceof 判断不同作用域的引用类型会造成混乱
@@ -142,8 +150,10 @@ Ho.prototype.isArray = function (arr) {
 };
 /**
  * 是否是函数类型
+ * @method isFunction
  * @param {Function} fn 被判断函数
  * @retrun Boolean true 是函数类型
+ * @author honoka
  */
 Ho.prototype.isFunction = function (fn) {
     return Object.prototype.toString.call(fn) == "[object Function]";
@@ -316,7 +326,7 @@ Ho.prototype.getObjectLength = function (obj) {
     var result = 0;
     for (var key in obj) {
         if (obj.hasOwnProperty(key)) {
-            result ++;
+            result++;
         }
     }
     return result;
@@ -327,10 +337,11 @@ Ho.prototype.getObjectLength = function (obj) {
  * Created by honoka on 16/2/27.
  * 事件辅助类
  */
-
 /**
  * 将函数绑定到 onload 事件上
+ * @method addLoadEvent
  * @param {function} func 需绑定的函数
+ * @author honoka
  */
 Ho.prototype.addLoadEvent = function (func) {
     //把现有的 window.onload 事件处理函数的值存入变量
@@ -351,42 +362,42 @@ Ho.prototype.addLoadEvent = function (func) {
 /**
  * 数学操作辅助类
  */
- /**
-  * 得到元素都为数值型的数组最大值
-  * @method getMaxOfArr
-  * @param  {Array}    arr 被判断数组
-  * @return {number}   最大值
-  * @author honoka
-  */
- Ho.prototype.getMaxOfArr = function (arr) {
-     var result = Math.max.apply(Math, arr);
-     if (result) {
-         return result;
-     } else {
-         throw new Error("请输入仅包含数值的数组");
-     }
- };
- /**
-  * 得到元素都为数值型的数组最小值
-  * @method getMinOfArr
-  * @param  {Array}    arr 被判断数组
-  * @return {number}   最小值
-  * @author honoka
-  */
- Ho.prototype.getMinOfArr = function (arr) {
-     var result = Math.min.apply(Math, arr);
-     if (result) {
-         return result;
-     } else {
-         throw new Error("请输入仅包含数值的数组");
-     }
- };
+/**
+ * 得到元素都为数值型的数组最大值
+ * @method getMaxOfArr
+ * @param  {Array}    arr 被判断数组
+ * @return {number}   最大值
+ * @author honoka
+ */
+Ho.prototype.getMaxOfArr = function (arr) {
+    var result = Math.max.apply(Math, arr);
+    if (result) {
+        return result;
+    } else {
+        throw new Error("请输入仅包含数值的数组");
+    }
+};
+/**
+ * 得到元素都为数值型的数组最小值
+ * @method getMinOfArr
+ * @param  {Array}    arr 被判断数组
+ * @return {number}   最小值
+ * @author honoka
+ */
+Ho.prototype.getMinOfArr = function (arr) {
+    var result = Math.min.apply(Math, arr);
+    if (result) {
+        return result;
+    } else {
+        throw new Error("请输入仅包含数值的数组");
+    }
+};
 /**
  * 随机生成一个范围内的数值
  * @method getRandomNum
- * @param  {[number]}     lower 最小取值
- * @param  {[number]}     upper 最大取值
- * @return {[number]}     lower 到 upper 之间的一个随机数
+ * @param  {number}     lower 最小取值
+ * @param  {number}     upper 最大取值
+ * @return {number}     lower 到 upper 之间的一个随机数
  * @author honoka
  */
 Ho.prototype.getRandomNum = function (lower, upper) {
@@ -549,30 +560,35 @@ Ho.prototype.isIDCard = function (idCode) {
  */
 /**
  * 以 get 方式发送请求
+ * @method get
  * @param {string} url  请求链接
  * @param {Object} options 配置项
  * 配置项内容：
  * {boolean} async true异步方式，false 同步方式
  * {function} succ 请求成功后的回调函数
  * {function} fail 请求失败后的回调函数
+ * @author honoka
  */
 Ho.prototype.get = function (url, options) {
     send(url, "GET", options);
 };
 /**
  * 以 get 方式读取数据
+ * @method load
  * @param {string} url  请求链接
  * @param {Object} options 配置项
  * 配置项内容：
  * {boolean} async true异步方式，false 同步方式
  * {function} succ 请求成功后的回调函数
  * {function} fail 请求失败后的回调函数
+ * @author honoka
  */
 Ho.prototype.load = function (url, options) {
     send(url, "GET", options);
 };
 /**
  * 以 post 方式发送请求
+ * @method post
  * @param {string} url  请求链接
  * @param {Object} options 配置项
  * 配置项内容：
@@ -580,6 +596,7 @@ Ho.prototype.load = function (url, options) {
  * {boolean} async true异步方式，false 同步方式
  * {function} succ 请求成功后的回调函数
  * {function} fail 请求失败后的回调函数
+ * @author honoka
  */
 Ho.prototype.post = function (url, options) {
     send(url, "POST", options);
@@ -608,11 +625,11 @@ function send(url, method, options) {
             if (request.readyState === 4 && (request.status === 200)) {
                 succCallback(request.responseText);
             } else if (request.status === 400 || request.status === 404 || request.status === 500) {
-                failCallback()
+                failCallback();
             }
         };
     }
-};
+}
 /**
  * 获得 XHR 对象
  * @returns {XMLHttpRequest} XHR 对象
@@ -623,7 +640,7 @@ function getAjaxObj() {
     } else { // code for IE6, IE5
         return new ActiveXObject("Microsoft.XMLHTTP");
     }
-};
+}
 
 
 

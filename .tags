@@ -1,0 +1,302 @@
+describe	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^describe("测试数据操作类", function () {$/;"	function	line:7
+func	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    var func = function () {};$/;"	function	line:9
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("测试数组判断方法", function () {$/;"	function	line:16
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("测试函数判断方法", function () {$/;"	function	line:20
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("测试对象判断方法", function () {$/;"	function	line:24
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("测试数值判断方法", function () {$/;"	function	line:28
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("测试字符串判断方法", function () {$/;"	function	line:32
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("测试正则表达式判断方法", function () {$/;"	function	line:36
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("测试布尔判断方法", function () {$/;"	function	line:40
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("测试日期判断方法", function () {$/;"	function	line:44
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("测试深度复制对象方法", function () {$/;"	function	line:48
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("测试数组去重", function () {$/;"	function	line:75
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("测试字符串去空格", function () {$/;"	function	line:84
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("测试遍历执行函数", function () {$/;"	function	line:88
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("测试获取对象第一层元素数量", function () {$/;"	function	line:96
+describe	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^describe("数学辅助类", function () {$/;"	function	line:109
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("生成一个范围内的随机数", function () {$/;"	function	line:110
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("测试判断数组最大最小值", function () {$/;"	function	line:115
+describe	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^describe("正则表达式验证辅助类", function () {$/;"	function	line:122
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("验证邮箱地址", function () {$/;"	function	line:125
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("验证数值字符串，并在长度范围内", function () {$/;"	function	line:131
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("验证注册名", function () {$/;"	function	line:141
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("验证用户姓名", function () {$/;"	function	line:151
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("验证密码", function () {$/;"	function	line:163
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("验证电话号码", function () {$/;"	function	line:175
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("验证手机号码", function () {$/;"	function	line:189
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("验证 IP 地址", function () {$/;"	function	line:201
+it	/Users/niconicoAO/Documents/GitHub/honokajs/test/test.js	/^    it("验证身份证号码", function () {$/;"	function	line:213
+name	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^  "name": "honokajs",$/;"	function	line:2
+version	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^  "version": "0.1.6",$/;"	function	line:3
+main	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^  "main": "dist\/honokajs.min.js",$/;"	function	line:4
+description	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^  "description": "A light library of common JavaScript functions ",$/;"	function	line:5
+repository	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^  "repository": {$/;"	function	line:6
+type	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "type": "git",$/;"	function	line:7
+url	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "url": "git:\/\/github.com\/nitta-honoka\/honokajs.git"$/;"	function	line:8
+keywords	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^  "keywords": [$/;"	function	line:10
+author	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^  "author": "Aolin Xu",$/;"	function	line:18
+license	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^  "license": "MIT",$/;"	function	line:19
+readmeFilename	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^  "readmeFilename": "README.md",$/;"	function	line:20
+dependencies	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^  "dependencies": {},$/;"	function	line:21
+devDependencies	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^  "devDependencies": {$/;"	function	line:22
+cz-conventional-changelog	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "cz-conventional-changelog": "^1.1.5",$/;"	function	line:23
+grunt	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "grunt": "~0.4.1",$/;"	function	line:24
+grunt-contrib-concat	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "grunt-contrib-concat": "~0.3.0",$/;"	function	line:25
+grunt-contrib-jasmine	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "grunt-contrib-jasmine": "^1.0.0",$/;"	function	line:26
+grunt-contrib-jshint	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "grunt-contrib-jshint": "~0.6.4",$/;"	function	line:27
+grunt-contrib-qunit	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "grunt-contrib-qunit": "~0.3.0",$/;"	function	line:28
+grunt-contrib-uglify	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "grunt-contrib-uglify": "~0.2.4",$/;"	function	line:29
+grunt-contrib-watch	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "grunt-contrib-watch": "~0.5.3",$/;"	function	line:30
+grunt-jsdoc	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "grunt-jsdoc": "^1.1.0",$/;"	function	line:31
+grunt-shell	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "grunt-shell": "^1.2.1",$/;"	function	line:32
+grunt-template-jasmine-istanbul	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "grunt-template-jasmine-istanbul": "^0.4.0",$/;"	function	line:33
+jasmine	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "jasmine": "^2.4.1"$/;"	function	line:34
+config	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^  "config": {$/;"	function	line:36
+commitizen	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^    "commitizen": {$/;"	function	line:37
+path	/Users/niconicoAO/Documents/GitHub/honokajs/package.json	/^      "path": ".\/node_modules\/cz-conventional-changelog"$/;"	function	line:38
+name	/Users/niconicoAO/Documents/GitHub/honokajs/bower.json	/^  "name": "honokajs",$/;"	function	line:2
+version	/Users/niconicoAO/Documents/GitHub/honokajs/bower.json	/^  "version": "0.1.6",$/;"	function	line:3
+main	/Users/niconicoAO/Documents/GitHub/honokajs/bower.json	/^  "main": "dist\/honokajs.min.js",$/;"	function	line:4
+authors	/Users/niconicoAO/Documents/GitHub/honokajs/bower.json	/^  "authors": [$/;"	function	line:5
+description	/Users/niconicoAO/Documents/GitHub/honokajs/bower.json	/^  "description": "A light library of common JavaScript functions",$/;"	function	line:8
+keywords	/Users/niconicoAO/Documents/GitHub/honokajs/bower.json	/^  "keywords": [$/;"	function	line:9
+license	/Users/niconicoAO/Documents/GitHub/honokajs/bower.json	/^  "license": "MIT",$/;"	function	line:17
+ignore	/Users/niconicoAO/Documents/GitHub/honokajs/bower.json	/^  "ignore": [$/;"	function	line:18
+dependencies	/Users/niconicoAO/Documents/GitHub/honokajs/bower.json	/^  "dependencies": {},$/;"	function	line:24
+devDependencies	/Users/niconicoAO/Documents/GitHub/honokajs/bower.json	/^  "devDependencies": {$/;"	function	line:25
+jasmine-core	/Users/niconicoAO/Documents/GitHub/honokajs/bower.json	/^    "jasmine-core": "jasmine#^2.4.1"$/;"	function	line:26
+root	/Users/niconicoAO/Documents/GitHub/honokajs/src/main.js	/^var root = typeof self == 'object' && self.self === self && self ||$/;"	variable	line:7
+Ho	/Users/niconicoAO/Documents/GitHub/honokajs/src/main.js	/^var Ho = function (obj) {$/;"	function	line:12
+Ho	/Users/niconicoAO/Documents/GitHub/honokajs/src/main.js	/^var Ho = function (obj) {$/;"	class	line:12
+define	/Users/niconicoAO/Documents/GitHub/honokajs/src/main.js	/^    define('honoka', [], function () {$/;"	function	line:36
+isEmail	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isEmail = function (email) {$/;"	function	line:11
+Ho	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^\/**$/;"	class	line:0
+Ho.isEmail	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isEmail = function (email) {$/;"	method	line:11
+isDigit	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isDigit = function (numStr, lowwer, upper) {$/;"	function	line:28
+Ho.isDigit	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isDigit = function (numStr, lowwer, upper) {$/;"	method	line:28
+isRegisterName	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isRegisterName = function (regStr, lowwer, upper) {$/;"	function	line:45
+Ho.isRegisterName	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isRegisterName = function (regStr, lowwer, upper) {$/;"	method	line:45
+isTrueName	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isTrueName = function (name, lowwer, upper) {$/;"	function	line:62
+Ho.isTrueName	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isTrueName = function (name, lowwer, upper) {$/;"	method	line:62
+isPasswd	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isPasswd = function (passwd, lowwer, upper) {$/;"	function	line:79
+Ho.isPasswd	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isPasswd = function (passwd, lowwer, upper) {$/;"	method	line:79
+isTel	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isTel = function (tel) {$/;"	function	line:94
+Ho.isTel	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isTel = function (tel) {$/;"	method	line:94
+isMobile	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isMobile = function (mobNum) {$/;"	function	line:109
+Ho.isMobile	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isMobile = function (mobNum) {$/;"	method	line:109
+isIP	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isIP = function (ip) {$/;"	function	line:124
+Ho.isIP	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isIP = function (ip) {$/;"	method	line:124
+isIDCard	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isIDCard = function (idCode) {$/;"	function	line:139
+Ho.isIDCard	/Users/niconicoAO/Documents/GitHub/honokajs/src/regExpVerify.js	/^Ho.prototype.isIDCard = function (idCode) {$/;"	method	line:139
+exports	/Users/niconicoAO/Documents/GitHub/honokajs/Gruntfile.js	/^module.exports = function (grunt) {$/;"	function	line:1
+module.exports	/Users/niconicoAO/Documents/GitHub/honokajs/Gruntfile.js	/^module.exports = function (grunt) {$/;"	function	line:0
+getMaxOfArr	/Users/niconicoAO/Documents/GitHub/honokajs/src/math.js	/^Ho.prototype.getMaxOfArr = function (arr) {$/;"	function	line:11
+Ho	/Users/niconicoAO/Documents/GitHub/honokajs/src/math.js	/^\/**$/;"	class	line:0
+Ho.getMaxOfArr	/Users/niconicoAO/Documents/GitHub/honokajs/src/math.js	/^Ho.prototype.getMaxOfArr = function (arr) {$/;"	method	line:11
+getMinOfArr	/Users/niconicoAO/Documents/GitHub/honokajs/src/math.js	/^Ho.prototype.getMinOfArr = function (arr) {$/;"	function	line:26
+Ho.getMinOfArr	/Users/niconicoAO/Documents/GitHub/honokajs/src/math.js	/^Ho.prototype.getMinOfArr = function (arr) {$/;"	method	line:26
+getRandomNum	/Users/niconicoAO/Documents/GitHub/honokajs/src/math.js	/^Ho.prototype.getRandomNum = function (lower, upper) {$/;"	function	line:42
+Ho.getRandomNum	/Users/niconicoAO/Documents/GitHub/honokajs/src/math.js	/^Ho.prototype.getRandomNum = function (lower, upper) {$/;"	method	line:42
+get	/Users/niconicoAO/Documents/GitHub/honokajs/src/ajax.js	/^Ho.prototype.get = function (url, options) {$/;"	function	line:16
+Ho	/Users/niconicoAO/Documents/GitHub/honokajs/src/ajax.js	/^\/**$/;"	class	line:0
+Ho.get	/Users/niconicoAO/Documents/GitHub/honokajs/src/ajax.js	/^Ho.prototype.get = function (url, options) {$/;"	method	line:16
+load	/Users/niconicoAO/Documents/GitHub/honokajs/src/ajax.js	/^Ho.prototype.load = function (url, options) {$/;"	function	line:30
+Ho.load	/Users/niconicoAO/Documents/GitHub/honokajs/src/ajax.js	/^Ho.prototype.load = function (url, options) {$/;"	method	line:30
+post	/Users/niconicoAO/Documents/GitHub/honokajs/src/ajax.js	/^Ho.prototype.post = function (url, options) {$/;"	function	line:45
+Ho.post	/Users/niconicoAO/Documents/GitHub/honokajs/src/ajax.js	/^Ho.prototype.post = function (url, options) {$/;"	method	line:45
+send	/Users/niconicoAO/Documents/GitHub/honokajs/src/ajax.js	/^function send(url, method, options) {$/;"	function	line:54
+onreadystatechange	/Users/niconicoAO/Documents/GitHub/honokajs/src/ajax.js	/^        request.onreadystatechange = function () {$/;"	function	line:68
+request.onreadystatechange	/Users/niconicoAO/Documents/GitHub/honokajs/src/ajax.js	/^    if (succCallback instanceof Function) {$/;"	function	line:67
+send	/Users/niconicoAO/Documents/GitHub/honokajs/src/ajax.js	/^function send(url, method, options) {$/;"	function	line:54
+getAjaxObj	/Users/niconicoAO/Documents/GitHub/honokajs/src/ajax.js	/^function getAjaxObj() {$/;"	function	line:81
+getAjaxObj	/Users/niconicoAO/Documents/GitHub/honokajs/src/ajax.js	/^function getAjaxObj() {$/;"	function	line:81
+insertAfter	/Users/niconicoAO/Documents/GitHub/honokajs/src/dom.js	/^Ho.prototype.insertAfter = function (newElement, targetElement) {$/;"	function	line:12
+Ho	/Users/niconicoAO/Documents/GitHub/honokajs/src/dom.js	/^\/**$/;"	class	line:0
+Ho.insertAfter	/Users/niconicoAO/Documents/GitHub/honokajs/src/dom.js	/^Ho.prototype.insertAfter = function (newElement, targetElement) {$/;"	method	line:12
+getNextElement	/Users/niconicoAO/Documents/GitHub/honokajs/src/dom.js	/^Ho.prototype.getNextElement = function (node) {$/;"	function	line:30
+Ho.getNextElement	/Users/niconicoAO/Documents/GitHub/honokajs/src/dom.js	/^Ho.prototype.getNextElement = function (node) {$/;"	method	line:30
+addClass	/Users/niconicoAO/Documents/GitHub/honokajs/src/dom.js	/^Ho.prototype.addClass = function (element, value) {$/;"	function	line:48
+Ho.addClass	/Users/niconicoAO/Documents/GitHub/honokajs/src/dom.js	/^Ho.prototype.addClass = function (element, value) {$/;"	method	line:48
+loadScript	/Users/niconicoAO/Documents/GitHub/honokajs/src/dom.js	/^Ho.prototype.loadScript = function (url, callback) {$/;"	function	line:68
+Ho.loadScript	/Users/niconicoAO/Documents/GitHub/honokajs/src/dom.js	/^Ho.prototype.loadScript = function (url, callback) {$/;"	method	line:68
+onreadystatechange	/Users/niconicoAO/Documents/GitHub/honokajs/src/dom.js	/^        script.onreadystatechange = function () {$/;"	function	line:72
+script.onreadystatechange	/Users/niconicoAO/Documents/GitHub/honokajs/src/dom.js	/^    if (script.readyState) { \/\/for IE$/;"	function	line:71
+onload	/Users/niconicoAO/Documents/GitHub/honokajs/src/dom.js	/^        script.onload = function () {$/;"	function	line:79
+script.onload	/Users/niconicoAO/Documents/GitHub/honokajs/src/dom.js	/^    } else { \/\/for other browsers$/;"	function	line:78
+addLoadEvent	/Users/niconicoAO/Documents/GitHub/honokajs/src/event.js	/^Ho.prototype.addLoadEvent = function (func) {$/;"	function	line:11
+Ho	/Users/niconicoAO/Documents/GitHub/honokajs/src/event.js	/^\/**$/;"	class	line:0
+Ho.addLoadEvent	/Users/niconicoAO/Documents/GitHub/honokajs/src/event.js	/^Ho.prototype.addLoadEvent = function (func) {$/;"	method	line:11
+onload	/Users/niconicoAO/Documents/GitHub/honokajs/src/event.js	/^        window.onload = function () {$/;"	function	line:19
+window.onload	/Users/niconicoAO/Documents/GitHub/honokajs/src/event.js	/^    } else {$/;"	function	line:17
+isArray	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isArray = function (arr) {$/;"	function	line:12
+Ho	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^\/**$/;"	class	line:0
+Ho.isArray	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isArray = function (arr) {$/;"	method	line:12
+Ho.return	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isArray = function (arr) {$/;"	class	line:12
+isFunction	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isFunction = function (fn) {$/;"	function	line:24
+Ho.isFunction	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isFunction = function (fn) {$/;"	method	line:24
+isDate	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isDate = function (date) {$/;"	function	line:34
+Ho.isDate	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isDate = function (date) {$/;"	method	line:34
+isRegExp	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isRegExp = function (reg) {$/;"	function	line:44
+Ho.isRegExp	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isRegExp = function (reg) {$/;"	method	line:44
+isString	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isString = function (str) {$/;"	function	line:54
+Ho.isString	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isString = function (str) {$/;"	method	line:54
+isNumber	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isNumber = function (num) {$/;"	function	line:64
+Ho.isNumber	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isNumber = function (num) {$/;"	method	line:64
+isBoolean	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isBoolean = function (bol) {$/;"	function	line:74
+Ho.isBoolean	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isBoolean = function (bol) {$/;"	method	line:74
+isObject	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isObject = function (obj) {$/;"	function	line:84
+Ho.isObject	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.isObject = function (obj) {$/;"	method	line:84
+cloneObject	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.cloneObject = function (src) {$/;"	function	line:94
+Ho.cloneObject	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.cloneObject = function (src) {$/;"	method	line:94
+uniqArray	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.uniqArray = function (arr) {$/;"	function	line:140
+Ho.uniqArray	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.uniqArray = function (arr) {$/;"	method	line:140
+eachArr	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.eachArr = function (arr, fn) {$/;"	function	line:164
+Ho.eachArr	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.eachArr = function (arr, fn) {$/;"	method	line:164
+stringTrim	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.stringTrim = function (str) {$/;"	function	line:179
+Ho.stringTrim	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.stringTrim = function (str) {$/;"	method	line:179
+getObjectLength	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.getObjectLength = function (obj) {$/;"	function	line:191
+Ho.getObjectLength	/Users/niconicoAO/Documents/GitHub/honokajs/src/handle.js	/^Ho.prototype.getObjectLength = function (obj) {$/;"	method	line:191
+html	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<html lang="en">$/;"	function	line:3
+head	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<head>$/;"	function	line:4
+meta	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^	<meta charset="utf-8">$/;"	function	line:5
+meta	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^	<meta name="viewport" content="width=device-width">$/;"	function	line:6
+title	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^	<title>DocStrap Index<\/title>$/;"	function	line:7
+script	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^	<script src="\/\/html5shiv.googlecode.com\/svn\/trunk\/html5.js"><\/script>$/;"	function	line:10
+link	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^	<link type="text\/css" rel="stylesheet" href="styles\/sunlight.default.css">$/;"	function	line:12
+link	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^	<link type="text\/css" rel="stylesheet" href="styles\/site.cosmo.css">$/;"	function	line:14
+body	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<body>$/;"	function	line:18
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<div class="navbar navbar-default navbar-fixed-top navbar-inverse">$/;"	function	line:20
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<div class="container">$/;"	function	line:21
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^	<div class="navbar-header">$/;"	function	line:22
+a	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^		<a class="navbar-brand" href="index.html">DocStrap<\/a>$/;"	function	line:23
+button	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">$/;"	function	line:24
+span	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^			<span class="icon-bar"><\/span>$/;"	function	line:25
+span	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^			<span class="icon-bar"><\/span>$/;"	function	line:26
+span	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^			<span class="icon-bar"><\/span>$/;"	function	line:27
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^	<div class="navbar-collapse collapse" id="topNavigation">$/;"	function	line:30
+ul	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^		<ul class="nav navbar-nav">$/;"	function	line:31
+li	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^			<li class="dropdown">$/;"	function	line:33
+a	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"><\/b><\/a>$/;"	function	line:34
+ul	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^				<ul class="dropdown-menu ">$/;"	function	line:35
+li	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^					<li><a href="global.html#addClass">addClass<\/a><\/li><li><a href="global.html#addLoadEvent">addLoadEvent<\/a><\/li><li><a href="global.html#cloneObject">cloneObject<\/a><\/li><li><a href="global.html#eachArr">eachArr<\/a><\/li><li><a href="global.html#get">get<\/a><\/li><li><a href="global.html#getMaxOfArr">getMaxOfArr<\/a><\/li><li><a href="global.html#getMinOfArr">getMinOfArr<\/a><\/li><li><a href="global.html#getNextElement">getNextElement<\/a><\/li><li><a href="global.html#getObjectLength">getObjectLength<\/a><\/li><li><a href="global.html#getRandomNum">getRandomNum<\/a><\/li><li><a href="global.html#insertAfter">insertAfter<\/a><\/li><li><a href="global.html#isArray">isArray<\/a><\/li><li><a href="global.html#isBoolean">isBoolean<\/a><\/li><li><a href="global.html#isDate">isDate<\/a><\/li><li><a href="global.html#isEmail">isEmail<\/a><\/li><li><a href="global.html#isFunction">isFunction<\/a><\/li><li><a href="global.html#isIDCard">isIDCard<\/a><\/li><li><a href="global.html#isIP">isIP<\/a><\/li><li><a href="global.html#isMobile">isMobile<\/a><\/li><li><a href="global.html#isNumber">isNumber<\/a><\/li><li><a href="global.html#isNumLength">isNumLength<\/a><\/li><li><a href="global.html#isObject">isObject<\/a><\/li><li><a href="global.html#isPasswd">isPasswd<\/a><\/li><li><a href="global.html#isRegExp">isRegExp<\/a><\/li><li><a href="global.html#isRegisterName">isRegisterName<\/a><\/li><li><a href="global.html#isString">isString<\/a><\/li><li><a href="global.html#isTel">isTel<\/a><\/li><li><a href="global.html#isTrueName">isTrueName<\/a><\/li><li><a href="global.html#load">load<\/a><\/li><li><a href="global.html#loadScript">loadScript<\/a><\/li><li><a href="global.html#post">post<\/a><\/li><li><a href="global.html#stringTrim">stringTrim<\/a><\/li><li><a href="global.html#uniqArray">uniqArray<\/a><\/li>$/;"	function	line:36
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^		<div class="col-sm-3 col-md-3">$/;"	function	line:41
+form	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^            <form class="navbar-form" role="search">$/;"	function	line:42
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^                <div class="input-group">$/;"	function	line:43
+input	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^                    <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">$/;"	function	line:44
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^                    <div class="input-group-btn">$/;"	function	line:45
+button	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^                        <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"><\/i><\/button>$/;"	function	line:46
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<div class="container" id="toc-content">$/;"	function	line:57
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<div class="row">$/;"	function	line:58
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^	<div class="col-md-8">$/;"	function	line:61
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^		<div id="main">$/;"	function	line:63
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^	<div class="clearfix"><\/div>$/;"	function	line:95
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^		<div class="col-md-3">$/;"	function	line:98
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"><\/div>$/;"	function	line:99
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<div class="modal fade" id="searchResults">$/;"	function	line:106
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^  <div class="modal-dialog">$/;"	function	line:107
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^    <div class="modal-content">$/;"	function	line:108
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^      <div class="modal-header">$/;"	function	line:109
+button	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;<\/span><\/button>$/;"	function	line:110
+h	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^        <h4 class="modal-title">Search results<\/h4>$/;"	function	line:111
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^      <div class="modal-body"><\/div>$/;"	function	line:113
+div	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^      <div class="modal-footer">$/;"	function	line:114
+button	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^        <button type="button" class="btn btn-default" data-dismiss="modal">Close<\/button>$/;"	function	line:115
+footer	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<footer>$/;"	function	line:121
+span	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^	<span class="copyright">$/;"	function	line:124
+span	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<span class="jsdoc-message">$/;"	function	line:128
+script	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<script src="scripts\/docstrap.lib.js"><\/script>$/;"	function	line:137
+script	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<script src="scripts\/toc.js"><\/script>$/;"	function	line:138
+script	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<script type="text\/javascript" src="scripts\/fulltext-search-ui.js"><\/script>$/;"	function	line:139
+script	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<script>$/;"	function	line:141
+script	/Users/niconicoAO/Documents/GitHub/honokajs/doc/index.html	/^<script type="text\/javascript">$/;"	function	line:212
+html	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^<html lang="en">$/;"	function	line:3
+head	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^<head>$/;"	function	line:5
+meta	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^    <meta charset="utf-8">$/;"	function	line:6
+meta	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^    <meta name="viewport" content="width=device-width">$/;"	function	line:7
+title	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^    <title>DocStrap Index<\/title>$/;"	function	line:8
+script	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^	<script src="\/\/html5shiv.googlecode.com\/svn\/trunk\/html5.js"><\/script>$/;"	function	line:11
+link	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^    <link type="text\/css" rel="stylesheet" href="doc\/styles\/sunlight.default.css">$/;"	function	line:13
+link	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^    <link type="text\/css" rel="stylesheet" href="doc\/styles\/site.cosmo.css">$/;"	function	line:15
+body	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^<body>$/;"	function	line:19
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">$/;"	function	line:21
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^        <div class="container">$/;"	function	line:22
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^            <div class="navbar-header">$/;"	function	line:23
+a	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                <a class="navbar-brand" href="index.html">DocStrap<\/a>$/;"	function	line:24
+button	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">$/;"	function	line:25
+span	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                    <span class="icon-bar"><\/span>$/;"	function	line:26
+span	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                    <span class="icon-bar"><\/span>$/;"	function	line:27
+span	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                    <span class="icon-bar"><\/span>$/;"	function	line:28
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^            <div class="navbar-collapse collapse" id="topNavigation">$/;"	function	line:31
+ul	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                <ul class="nav navbar-nav">$/;"	function	line:32
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                    <li class="dropdown">$/;"	function	line:34
+a	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                        <a href="doc\/global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"><\/b><\/a>$/;"	function	line:35
+ul	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                        <ul class="dropdown-menu ">$/;"	function	line:36
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#addClass">addClass<\/a><\/li>$/;"	function	line:37
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#addLoadEvent">addLoadEvent<\/a><\/li>$/;"	function	line:38
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#cloneObject">cloneObject<\/a><\/li>$/;"	function	line:39
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#eachArr">eachArr<\/a><\/li>$/;"	function	line:40
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#get">get<\/a><\/li>$/;"	function	line:41
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#getMaxOfArr">getMaxOfArr<\/a><\/li>$/;"	function	line:42
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#getMinOfArr">getMinOfArr<\/a><\/li>$/;"	function	line:43
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#getNextElement">getNextElement<\/a><\/li>$/;"	function	line:44
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#getObjectLength">getObjectLength<\/a><\/li>$/;"	function	line:45
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#getRandomNum">getRandomNum<\/a><\/li>$/;"	function	line:46
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#insertAfter">insertAfter<\/a><\/li>$/;"	function	line:47
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isArray">isArray<\/a><\/li>$/;"	function	line:48
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isBoolean">isBoolean<\/a><\/li>$/;"	function	line:49
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isDate">isDate<\/a><\/li>$/;"	function	line:50
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isEmail">isEmail<\/a><\/li>$/;"	function	line:51
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isFunction">isFunction<\/a><\/li>$/;"	function	line:52
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isIDCard">isIDCard<\/a><\/li>$/;"	function	line:53
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isIP">isIP<\/a><\/li>$/;"	function	line:54
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isMobile">isMobile<\/a><\/li>$/;"	function	line:55
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isNumber">isNumber<\/a><\/li>$/;"	function	line:56
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isNumLength">isNumLength<\/a><\/li>$/;"	function	line:57
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isObject">isObject<\/a><\/li>$/;"	function	line:58
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isPasswd">isPasswd<\/a><\/li>$/;"	function	line:59
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isRegExp">isRegExp<\/a><\/li>$/;"	function	line:60
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isRegisterName">isRegisterName<\/a><\/li>$/;"	function	line:61
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isString">isString<\/a><\/li>$/;"	function	line:62
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isTel">isTel<\/a><\/li>$/;"	function	line:63
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#isTrueName">isTrueName<\/a><\/li>$/;"	function	line:64
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#load">load<\/a><\/li>$/;"	function	line:65
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#loadScript">loadScript<\/a><\/li>$/;"	function	line:66
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#post">post<\/a><\/li>$/;"	function	line:67
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#stringTrim">stringTrim<\/a><\/li>$/;"	function	line:68
+li	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <li><a href="doc\/global.html#uniqArray">uniqArray<\/a><\/li>$/;"	function	line:69
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                <div class="col-sm-3 col-md-3">$/;"	function	line:74
+form	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                    <form class="navbar-form" role="search">$/;"	function	line:75
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                        <div class="input-group">$/;"	function	line:76
+input	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">$/;"	function	line:77
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                            <div class="input-group-btn">$/;"	function	line:78
+button	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                                <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"><\/i><\/button>$/;"	function	line:79
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^    <div class="container" id="toc-content">$/;"	function	line:90
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^        <div class="row">$/;"	function	line:91
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^            <div class="col-md-8">$/;"	function	line:94
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                <div id="main">$/;"	function	line:96
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^            <div class="clearfix"><\/div>$/;"	function	line:110
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^            <div class="col-md-3">$/;"	function	line:113
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                <div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"><\/div>$/;"	function	line:114
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^    <div class="modal fade" id="searchResults">$/;"	function	line:121
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^        <div class="modal-dialog">$/;"	function	line:122
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^            <div class="modal-content">$/;"	function	line:123
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                <div class="modal-header">$/;"	function	line:124
+button	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;<\/span><\/button>$/;"	function	line:125
+h	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                    <h4 class="modal-title">Search results<\/h4>$/;"	function	line:126
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                <div class="modal-body"><\/div>$/;"	function	line:128
+div	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                <div class="modal-footer">$/;"	function	line:129
+button	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^                    <button type="button" class="btn btn-default" data-dismiss="modal">Close<\/button>$/;"	function	line:130
+footer	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^    <footer>$/;"	function	line:138
+span	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^        <span class="copyright">$/;"	function	line:141
+span	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^        <span class="jsdoc-message">$/;"	function	line:145
+script	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^    <script src="doc\/scripts\/docstrap.lib.js"><\/script>$/;"	function	line:154
+script	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^    <script src="doc\/scripts\/toc.js"><\/script>$/;"	function	line:155
+script	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^    <script type="text\/javascript" src="doc\/scripts\/fulltext-search-ui.js"><\/script>$/;"	function	line:156
+script	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^    <script>$/;"	function	line:158
+script	/Users/niconicoAO/Documents/GitHub/honokajs/index.html	/^    <script type="text\/javascript">$/;"	function	line:229
+honokajs	/Users/niconicoAO/Documents/GitHub/honokajs/README.md	/^# honokajs$/;"	function	line:3
+About	/Users/niconicoAO/Documents/GitHub/honokajs/README.md	/^## About$/;"	function	line:7
+Installation	/Users/niconicoAO/Documents/GitHub/honokajs/README.md	/^## Installation$/;"	function	line:13
+Usage	/Users/niconicoAO/Documents/GitHub/honokajs/README.md	/^## Usage$/;"	function	line:25
+Contributing	/Users/niconicoAO/Documents/GitHub/honokajs/README.md	/^## Contributing$/;"	function	line:35
+License	/Users/niconicoAO/Documents/GitHub/honokajs/README.md	/^## License$/;"	function	line:45

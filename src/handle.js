@@ -4,8 +4,10 @@
  */
 /**
  * 是否是数组类型
+ * @method isArray
  * @param {Array} arr 判断数组
  * @retrun Boolean true 是数组类型
+ * @author honoka
  */
 Ho.prototype.isArray = function (arr) {
     //当页面存在多个全局作用域时，使用 instanceof 判断不同作用域的引用类型会造成混乱
@@ -14,8 +16,10 @@ Ho.prototype.isArray = function (arr) {
 };
 /**
  * 是否是函数类型
+ * @method isFunction
  * @param {Function} fn 被判断函数
  * @retrun Boolean true 是函数类型
+ * @author honoka
  */
 Ho.prototype.isFunction = function (fn) {
     return Object.prototype.toString.call(fn) == "[object Function]";
@@ -188,7 +192,7 @@ Ho.prototype.getObjectLength = function (obj) {
     var result = 0;
     for (var key in obj) {
         if (obj.hasOwnProperty(key)) {
-            result ++;
+            result++;
         }
     }
     return result;

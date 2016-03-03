@@ -16,3 +16,5 @@ results/
 *.gz
 *.iml
 workspace.xml
+*.tags
+*.tags1
