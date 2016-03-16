@@ -105,6 +105,10 @@ describe("测试数据操作类", function () {
         };
         expect(ho.getObjectLength(testObj)).toEqual(3);
     });
+    it("测试数组快速排序", function () {
+        var arr = [4,6,2,7,8];
+        expect(ho.quickSort(arr)).toEqual([2,4,6,7,8]);
+    })
 });
 
 describe("数学辅助类", function () {

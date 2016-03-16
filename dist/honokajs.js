@@ -331,6 +331,35 @@ Ho.prototype.getObjectLength = function (obj) {
     }
     return result;
 };
+/**
+ * 数组快速排序,数组元素必须为数值
+ * @method quickSort
+ * @param {Array} arr 被排序的数组
+ * @returns {Array} 排序完毕的数组
+ * @author honoka
+ */
+Ho.prototype.quickSort = function (arr) {
+    if (this.isArray(arr)) {
+        var length = arr.length;
+        if (length <= 1) {
+            return arr;
+        }
+        var num = Math.floor(length / 2);
+        var numVal = arr.splice(num, 1);
+        var left = [];
+        var right = [];
+        for (var i = 0; i < length - 1; i++) {
+            if (arr[i] < numVal) {
+                left.push(arr[i]);
+            } else {
+                right.push(arr[i]);
+            }
+        }
+        return this.quickSort(left).concat(numVal, this.quickSort(right));
+    } else {
+        throw new Error('请传入数组参数');
+    }
+};
 
 
 /**
