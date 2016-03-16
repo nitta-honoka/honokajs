@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">64.95% </span>
+        <span class="strong">66.81% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>139/214</span>
+        <span class='fraction'>153/229</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">43.8% </span>
+        <span class="strong">45.67% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>53/121</span>
+        <span class='fraction'>58/127</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">64.29% </span>
+        <span class="strong">65.12% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>27/42</span>
+        <span class='fraction'>28/43</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">64.95% </span>
+        <span class="strong">66.81% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>139/214</span>
+        <span class='fraction'>153/229</span>
       </div>
     </div>
   </div>
@@ -690,7 +690,36 @@
 645
 646
 647
-648</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+648
+649
+650
+651
+652
+653
+654
+655
+656
+657
+658
+659
+660
+661
+662
+663
+664
+665
+666
+667
+668
+669
+670
+671
+672
+673
+674
+675
+676
+677</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -838,7 +867,7 @@
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">16×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1022,6 +1051,35 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1670,6 +1728,35 @@ Ho.prototype.getObjectLength = function (obj) {
     }
     return result;
 };
+/**
+ * 数组快速排序,数组元素必须为数值
+ * @method quickSort
+ * @param {Array} arr 被排序的数组
+ * @returns {Array} 排序完毕的数组
+ * @author honoka
+ */
+Ho.prototype.quickSort = function (arr) {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (this.isArray(arr)) {
+        var length = arr.length;
+        if (length &lt;= 1) {
+            return arr;
+        }
+        var num = Math.floor(length / 2);
+        var numVal = arr.splice(num, 1);
+        var left = [];
+        var right = [];
+        for (var i = 0; i &lt; length - 1; i++) {
+            if (arr[i] &lt; numVal) {
+                left.push(arr[i]);
+            } else {
+                right.push(arr[i]);
+            }
+        }
+        return this.quickSort(left).concat(numVal, this.quickSort(right));
+    } else {
+<span class="cstat-no" title="statement not covered" >        throw new Error('请传入数组参数');</span>
+    }
+};
 &nbsp;
 &nbsp;
 /**
@@ -1990,7 +2077,7 @@ Ho.prototype.post = <span class="fstat-no" title="function not covered" >functio
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Mar 04 2016 00:07:15 GMT+0800 (CST)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Mar 16 2016 23:29:11 GMT+0800 (CST)
 </div>
 </div>
 <script src="../prettify.js"></script>
