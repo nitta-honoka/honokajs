@@ -386,6 +386,20 @@ Ho.prototype.addLoadEvent = function (func) {
         }
     }
 };
+/**
+ * 检测对象是否包含特性,用作浏览器特性检测
+ * @method isHostMethod
+ * @param {Object} obj 被检测的对象
+ * @param {string} property 对象的某个特性
+ * @return true 对象包含该特性
+ * @author honoka
+ */
+Ho.prototype.isHostMethod = function (obj, property) {
+    var t = typeof obj[property];
+    return t == 'function'
+                || (!!(t == 'object' && obj[property]))
+                || t == 'unknown';
+};
 
 
 /**
